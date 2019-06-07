@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Portal Daneshjoi</string>
+    <string name="txt_p">پورتال دانشجویی</string>
+    <string name="tnb_club">TNB Club</string>
+    <string name="_1_0_0">1.0.0</string>
+    <string name="tnb_logo">Tnb_logo</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">شماره دانشجویی</string>
+    <string name="prompt_password">رمز عبور</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="shomare_daneshjooii">شماره دانشجویی</string>
+    <string name="pass">رمز عبور</string>
+    <string name="log_in">ورود به سامانه</string>
+    <string name="content">دانشگاه آزاد اسلامی واحد تهران شمال</string>
+    <string name="portal_amozeshi">پورتال آموزشی</string>
+    <string name="omormali">امور مالی</string>
+    <string name="amozeshi">امور آموزشی</string>
+    <string name="darkhast">درخواست دانشجویی</string>
+    <string name="vahed">انتخاب واحد</string>
+    <string name="my_image">my image</string>
+    <string name="user">محمد امین خادمی</string>
+    <string name="_950431277">950431277</string>
+    <string name="person_info">اطلاعات شخصی</string>
+    <string name="email">پیام ها</string>
+    <string name="parvande">پرونده دیجیتال</string>
+    <string name="subheader">subheader</string>
+    <string name="map">نقشه</string>
+    <string name="phone">ثبت موبایل</string>
+    <string name="exit">خروج</string>
+    <string name="close_navigation">Close Navigation Drawer</string>
+    <string name="open_navigation">Open Navigation Drawer</string>
+    <string name="vaziate_tahsili">خلاصه وضعیت تحصیلی</string>
+    <string name="change_pass">تغییر رمز</string>
+    <string name="my_photo">my photo</string>
+</resources>

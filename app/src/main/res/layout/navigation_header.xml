@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:gravity="bottom"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:layout_height="230dp"
+    android:background="@drawable/mohandesi">
+
+    <ImageView
+        android:id="@+id/profile_id"
+        android:background="@drawable/profile_back"
+        android:layout_width="70dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/my_image"
+        android:layout_height="70dp"
+        android:src="@drawable/picture"/>
+
+    <TextView
+        android:text="@string/user"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/user_name_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    <TextView
+        android:textColor="#C3000000"
+        android:textSize="18sp"
+
+        android:id="@+id/student_num_id"
+        android:text="@string/_950431277"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
