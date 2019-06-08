@@ -41,4 +41,8 @@
     <string name="vaziate_tahsili">خلاصه وضعیت تحصیلی</string>
     <string name="change_pass">تغییر رمز</string>
     <string name="my_photo">my photo</string>
+    <string name="pardakht_item">پرداخت الکترونیک</string>
+    <string name="vaziate_mali">وضعیت مالی</string>
+    <string name="formol_shahrie">فرمول شهریه</string>
+    <string name="failed_payent">پرداخت های ناموفق</string>
 </resources>
