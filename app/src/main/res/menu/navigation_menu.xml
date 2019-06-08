@@ -16,6 +16,11 @@
             android:title="@string/parvande"
             android:id="@+id/parvande_id"
             android:icon="@drawable/ic_account_balance_wallet_black_24dp"/>
+
+        <item
+            android:title="@string/vaziate_tahsili"
+            android:id="@+id/kholase_vaze_tahsili_id"
+            android:icon="@drawable/ic_format_list_bulleted_black_24dp"/>
     </group>
 
     <item android:title="@string/subheader">

@@ -2,11 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:title="@string/vaziate_tahsili"
-        android:id="@+id/kholase_vaze_tahsili_id"
-        android:icon="@drawable/ic_format_list_bulleted_black_24dp"/>
-
-    <item
         android:title="@string/change_pass"
         android:id="@+id/change_pass_id"
         android:icon="@drawable/ic_vpn_key_black_24dp"/>

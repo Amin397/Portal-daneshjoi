@@ -45,4 +45,13 @@
     <string name="vaziate_mali">وضعیت مالی</string>
     <string name="formol_shahrie">فرمول شهریه</string>
     <string name="failed_payent">پرداخت های ناموفق</string>
+    <string name="barname_haftegi">برنامه هفتگی</string>
+    <string name="barname_kelasi">برنامه کلاسی</string>
+    <string name="eteraz">اعتراض نمرات</string>
+    <string name="karname">کارنامه</string>
+    <string name="list_doros">لیست دروس</string>
+    <string name="zaman_bandi">زمان بندی ثبت نام</string>
+    <string name="kart">کارت امتحان</string>
+    <string name="tarh">طرح درس</string>
+    <string name="jozve">دریافت جزوه</string>
 </resources>

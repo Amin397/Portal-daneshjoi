@@ -69,6 +69,9 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this, "پرونده دیجیتال", Toast.LENGTH_SHORT).show();
                         break;
                     }
+                    case R.id.kholase_vaze_tahsili_id:{
+                        Toast.makeText(MainActivity.this, "خلاصه وضعیت تحصیلی", Toast.LENGTH_SHORT).show();
+                    }
                     case R.id.map_id:{
                         Toast.makeText(MainActivity.this, "نقشه", Toast.LENGTH_SHORT).show();
                         break;
