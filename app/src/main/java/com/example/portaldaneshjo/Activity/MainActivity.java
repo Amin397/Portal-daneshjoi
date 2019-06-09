@@ -136,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
 
         adapter.addFragment(malli, "امور مالی");
         adapter.addFragment(amozeshi, "امور آموزشی");
-        adapter.addFragment(darkhast, "درخواست دانشجویی");
+        adapter.addFragment(darkhast, "درخواست");
         adapter.addFragment(vahed, "انتخاب واحد");
         viewPager.setAdapter(adapter);
     }

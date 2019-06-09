@@ -54,4 +54,10 @@
     <string name="kart">کارت امتحان</string>
     <string name="tarh">طرح درس</string>
     <string name="jozve">دریافت جزوه</string>
+    <string name="khabgah">درخواست خوابگاه</string>
+    <string name="parking">پارکینگ</string>
+    <string name="ghaza">رزرو غذا</string>
+    <string name="vam">درخواست وام</string>
+    <string name="eshteghal">گواهی اشتغال</string>
+    <string name="morakhasi">مرخصی تحصیلی</string>
 </resources>
