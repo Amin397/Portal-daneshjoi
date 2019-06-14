@@ -99,7 +99,7 @@
                 android:layout_width="wrap_content"
                 android:background="@drawable/background_btns"
                 android:padding="15dp"
-                android:src="@drawable/ic_karname_24dp"
+                android:src="@drawable/ic_karnameh"
                 android:layout_height="wrap_content" />
             <TextView
                 android:id="@+id/txt_karname_id"
@@ -175,7 +175,7 @@
                 android:layout_width="wrap_content"
                 android:background="@drawable/background_btns"
                 android:padding="15dp"
-                android:src="@drawable/ic_kart_24dp"
+                android:src="@drawable/ic_examcard"
                 android:layout_height="wrap_content" />
             <TextView
                 android:id="@+id/txt_kart_id"
@@ -221,17 +221,18 @@
                 android:layout_width="wrap_content"
                 android:background="@drawable/background_btns"
                 android:padding="15dp"
-                android:src="@drawable/ic_jozve_24dp"
+                android:src="@drawable/ic_jozveh"
                 android:layout_height="wrap_content" />
+
             <TextView
                 android:id="@+id/txt_jozve_id"
-                android:textSize="16sp"
-                android:textColor="@color/black_color"
-                android:textAlignment="center"
-                android:text="@string/jozve"
-                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_marginLeft="25dp" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="@string/jozve"
+                android:textAlignment="center"
+                android:textColor="@color/black_color"
+                android:textSize="16sp" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
