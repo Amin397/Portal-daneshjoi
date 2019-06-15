@@ -71,4 +71,9 @@
     <string name="listdoros_image">listdoros_image</string>
     <string name="zamanbandi_image">zamanbandi_image</string>
     <string name="kart_image">kart_image</string>
+    <string name="bank_names">سامان، ملی، ملت، صادرات، تجارت، سپه، رفاه، کشاورزی، پارسیان، اقتصاد نوین، پاسارگاد، صنعت و معدن، مسکن، توسعه صادرات، پست بانک، کارآفرین، سرمایه، سینا</string>
+    <string name="shetab_content">برای پرداخت های الکترونیکی خود میتوانید از بانک های عضو شتاب زیر استفاده کنید : </string>
+    <string name="mablagh">مبلغ پرداختی:</string>
+    <string name="hint">ريال</string>
+    <string name="tozih">دانشجوی گرامی برای پرداخت ، بعد از وارد کردن مبلغ بانک ملی را لمس نمایید !</string>
 </resources>
