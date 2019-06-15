@@ -60,4 +60,15 @@
     <string name="vam">درخواست وام</string>
     <string name="eshteghal">گواهی اشتغال</string>
     <string name="morakhasi">مرخصی تحصیلی</string>
+    <string name="pardakht_image">pardakht image</string>
+    <string name="vaziatemali_image">vaziatemali_image</string>
+    <string name="formol_image">formol_image</string>
+    <string name="pardakhtnamovafagh_image">pardakhtnamovafagh_image</string>
+    <string name="barnamehaftegi_image">barnamehaftegi_image</string>
+    <string name="barnamekelasi_image">barnamekelasi_image</string>
+    <string name="eteraz_image">eteraz_image</string>
+    <string name="karname_image">karname_image</string>
+    <string name="listdoros_image">listdoros_image</string>
+    <string name="zamanbandi_image">zamanbandi_image</string>
+    <string name="kart_image">kart_image</string>
 </resources>

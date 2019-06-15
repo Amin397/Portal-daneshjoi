@@ -1,5 +1,6 @@
 package com.example.portaldaneshjo.Fragments;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -8,11 +9,14 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.portaldaneshjo.Activity.Omor_mali_activities.Formol_shahrie;
+import com.example.portaldaneshjo.Activity.Omor_mali_activities.Pardakht_electronic;
+import com.example.portaldaneshjo.Activity.Omor_mali_activities.Pardakht_namovafagh;
+import com.example.portaldaneshjo.Activity.Omor_mali_activities.Vaziate_mali;
 import com.example.portaldaneshjo.R;
 
 public class OmorMalli extends Fragment {
@@ -44,25 +48,25 @@ public class OmorMalli extends Fragment {
         btn_pardakht_e.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "پرداخت الکترونیک", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), Pardakht_electronic.class));
             }
         });
         btn_vaziat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "وضعیت مالی", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), Vaziate_mali.class));
             }
         });
         btn_formol.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "فرمول محاسبه ی شهریه", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), Formol_shahrie.class));
             }
         });
         btn_pardakht_namovafagh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "پرداخت های نا موفق", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), Pardakht_namovafagh.class));
             }
         });
         return view;

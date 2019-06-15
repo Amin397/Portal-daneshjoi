@@ -35,8 +35,6 @@ public class OmorAmozeshi extends Fragment {
         TextView txt_list_doros = (TextView) view.findViewById(R.id.txt_list_doros_id);
         TextView txt_zaman_bandi = (TextView) view.findViewById(R.id.txt_zaman_bandi_id);
         TextView txt_kart = (TextView) view.findViewById(R.id.txt_kart_id);
-        TextView txt_tarh = (TextView) view.findViewById(R.id.txt_tarh_id);
-        TextView txt_jozve = (TextView) view.findViewById(R.id.txt_jozve_id);
         ImageButton btn_barname_haftegi = (ImageButton) view.findViewById(R.id.btn_barname_haftegi_id);
         ImageButton btn_barname_kelasi = (ImageButton) view.findViewById(R.id.btn_barname_kelasi_id);
         ImageButton btn_eteraz = (ImageButton) view.findViewById(R.id.btn_eteraz_id);
@@ -44,8 +42,6 @@ public class OmorAmozeshi extends Fragment {
         ImageButton btn_list_doros = (ImageButton) view.findViewById(R.id.btn_list_doros_id);
         ImageButton btn_zaman_bandi = (ImageButton) view.findViewById(R.id.btn_zaman_bandi_id);
         ImageButton btn_kart = (ImageButton) view.findViewById(R.id.btn_kart_id);
-        ImageButton btn_tarh = (ImageButton) view.findViewById(R.id.btn_tarh_id);
-        ImageButton btn_jozve = (ImageButton) view.findViewById(R.id.btn_jozve_id);
 
         txt_barname_haftegi.setTypeface(typeface_from_txt);
         txt_barname_kelasi.setTypeface(typeface_from_txt);
@@ -54,8 +50,6 @@ public class OmorAmozeshi extends Fragment {
         txt_list_doros.setTypeface(typeface_from_txt);
         txt_zaman_bandi.setTypeface(typeface_from_txt);
         txt_kart.setTypeface(typeface_from_txt);
-        txt_tarh.setTypeface(typeface_from_txt);
-        txt_jozve.setTypeface(typeface_from_txt);
 
         btn_barname_haftegi.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,19 +93,6 @@ public class OmorAmozeshi extends Fragment {
                 Toast.makeText(getContext(), "کارت امتحان", Toast.LENGTH_SHORT).show();
             }
         });
-        btn_tarh.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getContext(), "طرح درس", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btn_jozve.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getContext(), "دریافت جزوه", Toast.LENGTH_SHORT).show();
-            }
-        });
         return view;
-
     }
 }
