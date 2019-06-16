@@ -1,5 +1,6 @@
 package com.example.portaldaneshjo.Fragments;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -13,6 +14,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.BarnameHaftegi;
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.BarnameKelasi;
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.EterazNomre;
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.Karname;
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.KartEmtehan;
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.ListDoros;
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.ZamanBandi;
 import com.example.portaldaneshjo.R;
 
 public class OmorAmozeshi extends Fragment {
@@ -35,8 +43,6 @@ public class OmorAmozeshi extends Fragment {
         TextView txt_list_doros = (TextView) view.findViewById(R.id.txt_list_doros_id);
         TextView txt_zaman_bandi = (TextView) view.findViewById(R.id.txt_zaman_bandi_id);
         TextView txt_kart = (TextView) view.findViewById(R.id.txt_kart_id);
-        TextView txt_tarh = (TextView) view.findViewById(R.id.txt_tarh_id);
-        TextView txt_jozve = (TextView) view.findViewById(R.id.txt_jozve_id);
         ImageButton btn_barname_haftegi = (ImageButton) view.findViewById(R.id.btn_barname_haftegi_id);
         ImageButton btn_barname_kelasi = (ImageButton) view.findViewById(R.id.btn_barname_kelasi_id);
         ImageButton btn_eteraz = (ImageButton) view.findViewById(R.id.btn_eteraz_id);
@@ -44,8 +50,6 @@ public class OmorAmozeshi extends Fragment {
         ImageButton btn_list_doros = (ImageButton) view.findViewById(R.id.btn_list_doros_id);
         ImageButton btn_zaman_bandi = (ImageButton) view.findViewById(R.id.btn_zaman_bandi_id);
         ImageButton btn_kart = (ImageButton) view.findViewById(R.id.btn_kart_id);
-        ImageButton btn_tarh = (ImageButton) view.findViewById(R.id.btn_tarh_id);
-        ImageButton btn_jozve = (ImageButton) view.findViewById(R.id.btn_jozve_id);
 
         txt_barname_haftegi.setTypeface(typeface_from_txt);
         txt_barname_kelasi.setTypeface(typeface_from_txt);
@@ -54,64 +58,49 @@ public class OmorAmozeshi extends Fragment {
         txt_list_doros.setTypeface(typeface_from_txt);
         txt_zaman_bandi.setTypeface(typeface_from_txt);
         txt_kart.setTypeface(typeface_from_txt);
-        txt_tarh.setTypeface(typeface_from_txt);
-        txt_jozve.setTypeface(typeface_from_txt);
 
         btn_barname_haftegi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "برنامه هفتگی", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), BarnameHaftegi.class));
             }
         });
         btn_barname_kelasi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "برنامه کلاسی", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), BarnameKelasi.class));
             }
         });
         btn_eteraz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "اعتراض نمرات", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), EterazNomre.class));
             }
         });
         btn_karname.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "کارنامه", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), Karname.class));
             }
         });
         btn_list_doros.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "لیست دروس ارائه شده", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), ListDoros.class));
             }
         });
         btn_zaman_bandi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "زمان بندی ثبت نام", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), ZamanBandi.class));
             }
         });
         btn_kart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "کارت امتحان", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btn_tarh.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getContext(), "طرح درس", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btn_jozve.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getContext(), "دریافت جزوه", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), KartEmtehan.class));
             }
         });
         return view;
-
     }
 }

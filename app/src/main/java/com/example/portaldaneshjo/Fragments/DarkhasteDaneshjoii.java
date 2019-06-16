@@ -1,5 +1,6 @@
 package com.example.portaldaneshjo.Fragments;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -10,8 +11,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.example.portaldaneshjo.Activity.Darkhast_daneshjoii_activities.Eshteghal;
+import com.example.portaldaneshjo.Activity.Darkhast_daneshjoii_activities.Ghaza;
+import com.example.portaldaneshjo.Activity.Darkhast_daneshjoii_activities.Khabgah;
+import com.example.portaldaneshjo.Activity.Darkhast_daneshjoii_activities.Morakhasi;
+import com.example.portaldaneshjo.Activity.Darkhast_daneshjoii_activities.Parking;
+import com.example.portaldaneshjo.Activity.Darkhast_daneshjoii_activities.Vam;
 import com.example.portaldaneshjo.R;
 
 public class DarkhasteDaneshjoii extends Fragment {
@@ -50,37 +56,37 @@ public class DarkhasteDaneshjoii extends Fragment {
         btn_khabgah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "درخواست خوابگاه", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), Khabgah.class));
             }
         });
         btn_parking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "پارکینگ", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), Parking.class));
             }
         });
         btn_ghaza.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "رزرو غذا", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), Ghaza.class));
             }
         });
         btn_vam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "درخواست وام", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), Vam.class));
             }
         });
         btn_eshteghal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "گواهی اشتغال", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), Eshteghal.class));
             }
         });
         btn_morakhasi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "مرخصی تحصیلی", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), Morakhasi.class));
             }
         });
         return view;

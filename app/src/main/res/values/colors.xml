@@ -5,4 +5,5 @@
     <color name="colorAccent">#D38708</color>
     <color name="withe_color">#ffffff</color>
     <color name="black_color">#000000</color>
+    <color name="background_activities">#DCAFD2E7</color>
 </resources>
