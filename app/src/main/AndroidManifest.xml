@@ -13,6 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+      
         <activity android:name=".Activity.Darkhast_daneshjoii_activities.Morakhasi" android:parentActivityName=".Activity.MainActivity"/>
         <activity android:name=".Activity.Darkhast_daneshjoii_activities.Eshteghal" android:parentActivityName=".Activity.MainActivity"/>
         <activity android:name=".Activity.Darkhast_daneshjoii_activities.Vam" android:parentActivityName=".Activity.MainActivity"/>
@@ -40,8 +41,14 @@
             android:parentActivityName=".Activity.MainActivity" />
         <activity android:name=".Activity.LoginActivity" />
         <activity
-            android:name=".Activity.Splash"
-            android:theme="@style/splash">
+                    android:name=".Activity.LoginActivity"
+                    android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+                    android:name=".Activity.Splash"
+                    android:theme="@style/splash"
+                    android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

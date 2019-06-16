@@ -2,7 +2,7 @@
     <string name="app_name">Portal Daneshjoi</string>
     <string name="txt_p">پورتال دانشجویی</string>
     <string name="tnb_club">TNB Club</string>
-    <string name="_1_0_0">1.0.0</string>
+    <string name="_1_1_0">1.1.0</string>
     <string name="tnb_logo">Tnb_logo</string>
     <string name="title_activity_login">Sign in</string>
     <!-- Strings related to login -->
@@ -24,13 +24,13 @@
     <string name="portal_amozeshi">پورتال آموزشی</string>
     <string name="omormali">امور مالی</string>
     <string name="amozeshi">امور آموزشی</string>
-    <string name="darkhast">درخواست دانشجویی</string>
+    <string name="darkhast">درخواست‌های دانشجویی</string>
     <string name="vahed">انتخاب واحد</string>
     <string name="my_image">my image</string>
-    <string name="user">محمد امین خادمی</string>
+    <string name="user">محمدامین خادمی</string>
     <string name="_950431277">950431277</string>
     <string name="person_info">اطلاعات شخصی</string>
-    <string name="email">پیام ها</string>
+    <string name="email">پیام‌ها</string>
     <string name="parvande">پرونده دیجیتال</string>
     <string name="subheader">subheader</string>
     <string name="map">نقشه</string>
@@ -43,14 +43,14 @@
     <string name="my_photo">my photo</string>
     <string name="pardakht_item">پرداخت الکترونیک</string>
     <string name="vaziate_mali">وضعیت مالی</string>
-    <string name="formol_shahrie">فرمول شهریه</string>
-    <string name="failed_payent">پرداخت های ناموفق</string>
+    <string name="mohasebe_shahrie">محاسبه شهریه</string>
+    <string name="failed_payent">پرداخت‌های ناموفق</string>
     <string name="barname_haftegi">برنامه هفتگی</string>
     <string name="barname_kelasi">برنامه کلاسی</string>
     <string name="eteraz">اعتراض نمرات</string>
     <string name="karname">کارنامه</string>
     <string name="list_doros">لیست دروس</string>
-    <string name="zaman_bandi">زمان بندی ثبت نام</string>
+    <string name="zaman_bandi">زمان‌بندی ثبت نام</string>
     <string name="kart">کارت امتحان</string>
     <string name="tarh">طرح درس</string>
     <string name="jozve">دریافت جزوه</string>
