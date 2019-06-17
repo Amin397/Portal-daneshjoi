@@ -20,4 +20,7 @@
         <item name="background">@color/withe_color</item>
     </style>
 
+    <style name="DropSpinner" parent="Base.Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:background">@drawable/spinner_selector</item>
+    </style>
 </resources>

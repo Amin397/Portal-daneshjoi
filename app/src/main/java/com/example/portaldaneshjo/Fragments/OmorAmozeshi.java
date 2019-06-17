@@ -1,5 +1,6 @@
 package com.example.portaldaneshjo.Fragments;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -13,6 +14,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.BarnameHaftegi;
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.BarnameKelasi;
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.EterazNomre;
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.Karname;
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.KartEmtehan;
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.ListDoros;
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.ZamanBandi;
 import com.example.portaldaneshjo.R;
 
 public class OmorAmozeshi extends Fragment {
@@ -54,43 +62,43 @@ public class OmorAmozeshi extends Fragment {
         btn_barname_haftegi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "برنامه هفتگی", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), BarnameHaftegi.class));
             }
         });
         btn_barname_kelasi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "برنامه کلاسی", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), BarnameKelasi.class));
             }
         });
         btn_eteraz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "اعتراض نمرات", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), EterazNomre.class));
             }
         });
         btn_karname.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "کارنامه", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), Karname.class));
             }
         });
         btn_list_doros.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "لیست دروس ارائه شده", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), ListDoros.class));
             }
         });
         btn_zaman_bandi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "زمان بندی ثبت نام", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), ZamanBandi.class));
             }
         });
         btn_kart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "کارت امتحان", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), KartEmtehan.class));
             }
         });
         return view;

@@ -38,6 +38,10 @@ public class Pardakht_electronic extends AppCompatActivity {
         txt_mablagh.setTypeface(txt);
         txt_tozih.setTypeface(txt);
 
+        toolbar.setTitle("پرداخت الکترونیک");
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         btn_melli.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,13 +50,7 @@ public class Pardakht_electronic extends AppCompatActivity {
                 }else {
                     Toast.makeText(Pardakht_electronic.this, "لطفا مبلغ را وارد نمایید !", Toast.LENGTH_SHORT).show();
                 }
-
             }
         });
-
-        toolbar.setTitle("پرداخت الکترونیک");
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
     }
 }

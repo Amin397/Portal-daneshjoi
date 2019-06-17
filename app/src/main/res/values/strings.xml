@@ -76,4 +76,5 @@
     <string name="mablagh">مبلغ پرداختی:</string>
     <string name="hint">ريال</string>
     <string name="tozih">دانشجوی گرامی برای پرداخت ، بعد از وارد کردن مبلغ بانک ملی را لمس نمایید !</string>
+    <string name="test_spinner">نیمسال اول 98-99</string>
 </resources>
