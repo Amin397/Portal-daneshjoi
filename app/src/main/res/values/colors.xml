@@ -7,5 +7,6 @@
     <color name="black_color">#000000</color>
     <color name="background_activities">#DCAFD2E7</color>
     <color name="red_color">#C70000</color>
-    <color name="green_color">#4D7448</color>
+    <color name="green_color_Dark">#4D7448</color>
+    <color name="green_color">#2EAC33</color>
 </resources>

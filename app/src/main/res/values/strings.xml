@@ -88,4 +88,13 @@
     <string name="tanbihat">تنبیهات</string>
     <string name="checkbox_kart">اینجانب محمد امین خادمی مطالب فوق را مطالعه کردم</string>
     <string name="btn_text">مشاهده کارت ورود به جلسه</string>
+    <string name="bestankar">بستانکار ريال</string>
+    <string name="bedehkar">بدهکار ريال</string>
+    <string name="shomarehesabjari">شماره حساب جاری</string>
+    <string name="tarikhfish">تاریخ فیش</string>
+    <string name="shomarefish">شماره فیش</string>
+    <string name="itemmali">آیتم مالی</string>
+    <string name="jamekol">جمع کل ریال:</string>
+    <string name="vaziatekol">وضعیت کل ریال:</string>
+    <string name="showvaziatekol">12000 بستانکار</string>
 </resources>
