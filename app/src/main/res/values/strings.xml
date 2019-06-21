@@ -77,4 +77,24 @@
     <string name="hint">ريال</string>
     <string name="tozih">دانشجوی گرامی برای پرداخت ، بعد از وارد کردن مبلغ بانک ملی را لمس نمایید !</string>
     <string name="test_spinner">نیمسال اول 98-99</string>
+    <string name="takhalof">تخلف و تقلب</string>
+    <string name="aiin_name">آیین نامه انضباطی دانشجویی مخصوص امتحانات</string>
+    <string name="takhalof_taghalob">نقض مقررات جلسه امتحان و هر آنچه که موجب افزایش دانسته های دانشجو نشود که اعم مصادیق عبارتند از : همراه داشتن کتاب ،جزوه ،موبایل و ...مگر با مجوز استاد
+    نوشتن اسم غیر واقعی روی برگه امتحانی .
+    کمک به دیگران برای پاسخگویی به سوالات.
+    خارج نمودن پاسخنامه از جلسه امتحان  یا پاره کردن آن .
+    فرستادن شخص دیگری بجای خود به جلسه امتحان.
+    شرکت به جای دیگری در امتحان.</string>
+    <string name="tanbihat">تنبیهات</string>
+    <string name="checkbox_kart">اینجانب محمد امین خادمی مطالب فوق را مطالعه کردم</string>
+    <string name="btn_text">مشاهده کارت ورود به جلسه</string>
+    <string name="bestankar">بستانکار ريال</string>
+    <string name="bedehkar">بدهکار ريال</string>
+    <string name="shomarehesabjari">شماره حساب جاری</string>
+    <string name="tarikhfish">تاریخ فیش</string>
+    <string name="shomarefish">شماره فیش</string>
+    <string name="itemmali">آیتم مالی</string>
+    <string name="jamekol">جمع کل ریال:</string>
+    <string name="vaziatekol">وضعیت کل ریال:</string>
+    <string name="showvaziatekol">12000 بستانکار</string>
 </resources>

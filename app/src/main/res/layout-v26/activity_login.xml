@@ -87,7 +87,7 @@
                 android:textAlignment="center"
                 android:inputType="number"
                 android:textColor="@color/colorPrimaryDark"
-                android:textColorHint="@color/colorPrimaryDark" />
+                android:textColorHint="@color/withe_color" />
 
             <TextView
                 android:id="@+id/txt_stu_pass_id"
@@ -115,7 +115,7 @@
                 android:singleLine="true"
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimaryDark"
-                android:textColorHint="@color/colorPrimaryDark"
+                android:textColorHint="@color/withe_color"
                 />
 
             <Button
@@ -127,6 +127,7 @@
                 android:background="@color/colorAccent"
                 android:text="@string/log_in"
                 android:textSize="20sp"
+                android:textColor="@color/withe_color"
                 android:textStyle="bold" />
 
         </LinearLayout>
