@@ -29,7 +29,7 @@ public class OmorMalli extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.omor_malli,container,false);
-        Typeface typeface_from_txt = Typeface.createFromAsset(getContext().getAssets(),"fonts/kodak.TTF");
+        Typeface typeface_from_txt = Typeface.createFromAsset(getContext().getAssets(),"fonts/IRANSans.ttf");
 
         TextView txt_pardakht_e = (TextView) view.findViewById(R.id.txt_pardakht_id);
         TextView txt_vaziat = (TextView) view.findViewById(R.id.txt_vaziat_id);

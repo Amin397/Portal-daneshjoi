@@ -31,7 +31,7 @@ public class DarkhasteDaneshjoii extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.darkhaste_daneshjoii,container,false);
-        Typeface typeface_from_txt = Typeface.createFromAsset(getContext().getAssets(),"fonts/kodak.TTF");
+        Typeface typeface_from_txt = Typeface.createFromAsset(getContext().getAssets(),"fonts/IRANSans.ttf");
 
         TextView txt_khabgah = (TextView) view.findViewById(R.id.txt_khabgah_id);
         TextView txt_parking = (TextView) view.findViewById(R.id.txt_parking_id);

@@ -32,7 +32,7 @@ public class Pardakht_electronic extends AppCompatActivity {
         btn_melli = (ImageButton) findViewById(R.id.btn_dargah_pardakht_id);
         txt_mablaghe_pardakhti = (EditText) findViewById(R.id.mablaghe_pardakhti_id);
 
-        Typeface txt = Typeface.createFromAsset(getAssets(),"fonts/kodak.TTF");
+        Typeface txt = Typeface.createFromAsset(getAssets(),"fonts/IRANSans.ttf");
         txt_bank_names.setTypeface(txt);
         txt_content.setTypeface(txt);
         txt_mablagh.setTypeface(txt);
