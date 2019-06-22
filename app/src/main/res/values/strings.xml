@@ -97,4 +97,9 @@
     <string name="jamekol">جمع کل (ریال):</string>
     <string name="vaziatekol">وضعیت کل (ریال):</string>
     <string name="showvaziatekol">12000 بستانکار</string>
+    <string name="variz_time">ساعت واریز</string>
+    <string name="variz_date">تاریخ واریز</string>
+    <string name="varizi_mablagh">مبلغ واریزی</string>
+    <string name="shomaresefaresh">شماره سفارش</string>
+    <string name="shenase">شناسه</string>
 </resources>
