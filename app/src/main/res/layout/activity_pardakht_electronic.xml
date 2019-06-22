@@ -59,20 +59,20 @@
             android:maxLines="1"
             android:id="@+id/mablaghe_pardakhti_id"
             android:inputType="number"
-            android:textColor="@color/withe_color"
+            android:textColor="@color/white_color"
             android:textAlignment="center"
             android:background="@drawable/background_edit_text"
             android:layout_height="45dp"
             android:layout_margin="20dp"/>
 
         <ImageButton
-            android:src="@drawable/bmi"
-            android:scaleType="centerCrop"
+            android:id="@+id/btn_dargah_pardakht_id"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
             android:layout_gravity="center"
             android:layout_marginBottom="8dp"
-            android:id="@+id/btn_dargah_pardakht_id"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_bmi" />
 
         <TextView
             android:id="@+id/txt_tozih_id"

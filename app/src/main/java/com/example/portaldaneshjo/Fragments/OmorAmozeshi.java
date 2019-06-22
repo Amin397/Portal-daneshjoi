@@ -34,7 +34,7 @@ public class OmorAmozeshi extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.omor_amozeshi,container,false);
-        Typeface typeface_from_txt = Typeface.createFromAsset(getContext().getAssets(),"fonts/kodak.TTF");
+        Typeface typeface_from_txt = Typeface.createFromAsset(getContext().getAssets(),"fonts/IRANSans.ttf");
 
         TextView txt_barname_haftegi = (TextView) view.findViewById(R.id.txt_barname_haftegi_id);
         TextView txt_barname_kelasi = (TextView) view.findViewById(R.id.txt_barname_kelasi_id);

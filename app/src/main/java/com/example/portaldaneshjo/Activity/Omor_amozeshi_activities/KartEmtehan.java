@@ -34,7 +34,7 @@ public class KartEmtehan extends AppCompatActivity {
         checkBox = (CheckBox) findViewById(R.id.checkbox_kart_id);
         btn_showkart = (Button) findViewById(R.id.btn_showkart_id);
 
-        Typeface textFont = Typeface.createFromAsset(getAssets(),"fonts/kodak.TTF");
+        Typeface textFont = Typeface.createFromAsset(getAssets(),"fonts/IRANSans.ttf");
         txt_aiin.setTypeface(textFont);
         txt_taghalobat.setTypeface(textFont);
         txt_takhalofat.setTypeface(textFont);
@@ -48,7 +48,7 @@ public class KartEmtehan extends AppCompatActivity {
                     startActivity(new Intent(KartEmtehan.this,ShowKartEmtehan.class));
                 }
                 else {
-                    Toast.makeText(KartEmtehan.this, "لطفا مطالب و قوانین فوق را تایید نمایید !", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(KartEmtehan.this, "لطفا مطالب و قوانین فوق را تایید نمایید!", Toast.LENGTH_SHORT).show();
                 }
             }
         });

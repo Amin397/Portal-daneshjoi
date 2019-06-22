@@ -25,19 +25,19 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         txt_stu_num = (TextView) findViewById(R.id.txt_studenum_id);
-        Typeface txt_num = Typeface.createFromAsset(getAssets(),"fonts/kodak.TTF");
+        Typeface txt_num = Typeface.createFromAsset(getAssets(),"fonts/IRANSans.ttf");
         txt_stu_num.setTypeface(txt_num);
 
         txt_stu_pass = (TextView) findViewById(R.id.txt_stu_pass_id);
-        Typeface txt_pass = Typeface.createFromAsset(getAssets(),"fonts/kodak.TTF");
+        Typeface txt_pass = Typeface.createFromAsset(getAssets(),"fonts/IRANSans.ttf");
         txt_stu_pass.setTypeface(txt_pass);
 
         txt_portal = (TextView) findViewById(R.id.portal_id);
-        Typeface txt_portal_T = Typeface.createFromAsset(getAssets(),"fonts/kodak.TTF");
+        Typeface txt_portal_T = Typeface.createFromAsset(getAssets(),"fonts/IRANSans.ttf");
         txt_portal.setTypeface(txt_portal_T);
 
         btn_login = (Button) findViewById(R.id.btn_sign_in_id);
-        Typeface btn_txt=Typeface.createFromAsset(getAssets(),"fonts/kodak.TTF");
+        Typeface btn_txt=Typeface.createFromAsset(getAssets(),"fonts/IRANSans.ttf");
         btn_login.setTypeface(btn_txt);
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override

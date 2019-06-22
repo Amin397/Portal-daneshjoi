@@ -17,7 +17,7 @@
     </style>
     
     <style name="PopupMenu" parent="Theme.AppCompat.Light">
-        <item name="background">@color/withe_color</item>
+        <item name="background">@color/white_color</item>
     </style>
 
     <style name="DropSpinner" parent="Base.Widget.AppCompat.DropDownItem.Spinner">
