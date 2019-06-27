@@ -11,16 +11,17 @@
 
     <ImageView
         android:id="@+id/profile_id"
-        android:background="@drawable/profile_back"
         android:layout_width="70dp"
-        android:scaleType="centerCrop"
-        android:contentDescription="@string/my_image"
         android:layout_height="70dp"
-        android:src="@drawable/picture"/>
+        android:background="@drawable/profile_back"
+        android:contentDescription="@string/my_image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/picture" />
 
     <TextView
         android:text="@string/user"
-        android:textColor="#000000"
+        android:fontFamily="@font/titr"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp"
         android:layout_marginTop="5dp"
         android:id="@+id/user_name_id"
@@ -29,11 +30,11 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
     <TextView
-        android:textColor="#C3000000"
-        android:textSize="18sp"
-
         android:id="@+id/student_num_id"
-        android:text="@string/_950431277"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/titr"
+        android:text="@string/_950431277"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
 </LinearLayout>

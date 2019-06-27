@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity.LoginActivity"
-    android:background="@color/colorPrimary">
+    android:background="#0097a7">
 
 
     <ImageView
-        android:src="@drawable/logo1"
+        android:src="@drawable/logo_login"
         android:layout_centerHorizontal="true"
         android:id="@+id/img_logo_id"
         android:layout_width="80dp"
@@ -22,7 +22,8 @@
         android:layout_marginTop="5dp"
         android:text="@string/content"
         android:textAlignment="center"
-        android:textColor="#ffffff"
+        android:textColor="@color/white_color"
+        android:fontFamily="@font/titr"
         android:textSize="20sp"
         android:layout_marginBottom="3dp"
         android:layout_width="match_parent"
@@ -31,7 +32,8 @@
     <TextView
         android:id="@+id/portal_id"
         android:textAlignment="center"
-        android:textColor="#ffffff"
+        android:textColor="@color/white_color"
+        android:fontFamily="@font/kodak"
         android:textSize="16sp"
         android:layout_marginBottom="30dp"
         android:text="@string/portal_amozeshi"
@@ -71,6 +73,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="@string/shomare_daneshjooii"
+                android:fontFamily="@font/kodak"
                 android:textAlignment="center"
                 android:textColor="#023653"
                 android:textSize="18sp" />
@@ -95,6 +98,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:text="@string/pass"
+                android:fontFamily="@font/kodak"
                 android:textAlignment="center"
                 android:textColor="#023653"
                 android:textSize="18sp" />
@@ -126,6 +130,7 @@
                 android:layout_marginTop="16dp"
                 android:background="@color/colorAccent"
                 android:text="@string/log_in"
+                android:fontFamily="@font/kodak"
                 android:textSize="20sp"
                 android:textColor="@color/white_color"
                 android:textStyle="bold" />
