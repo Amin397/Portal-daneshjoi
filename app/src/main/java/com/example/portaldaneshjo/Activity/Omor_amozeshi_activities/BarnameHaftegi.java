@@ -1,5 +1,6 @@
 package com.example.portaldaneshjo.Activity.Omor_amozeshi_activities;
 
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -44,7 +45,8 @@ public class BarnameHaftegi extends AppCompatActivity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(BarnameHaftegi.this, nimsaltahsili.get(position).getNimsal(), Toast.LENGTH_SHORT).show();
+                Snackbar snackbar = Snackbar.make(view,nimsaltahsili.get(position).getNimsal(),Snackbar.LENGTH_SHORT);
+                snackbar.show();
             }
 
             @Override

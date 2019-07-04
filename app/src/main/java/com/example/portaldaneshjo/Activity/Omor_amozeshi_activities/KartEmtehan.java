@@ -2,6 +2,7 @@ package com.example.portaldaneshjo.Activity.Omor_amozeshi_activities;
 
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -48,7 +49,8 @@ public class KartEmtehan extends AppCompatActivity {
                     startActivity(new Intent(KartEmtehan.this,ShowKartEmtehan.class));
                 }
                 else {
-                    Toast.makeText(KartEmtehan.this, "لطفا مطالب و قوانین فوق را تایید نمایید!", Toast.LENGTH_SHORT).show();
+                    Snackbar snackbar = Snackbar.make(v,"لطفا مطالب و قوانین فوق را تایید نمایید !",Snackbar.LENGTH_SHORT);
+                    snackbar.show();
                 }
             }
         });

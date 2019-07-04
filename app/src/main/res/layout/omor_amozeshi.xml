@@ -1,204 +1,217 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     >
-    
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="1"
-        android:layout_margin="5dp"
-        android:baselineAligned="false">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="0.33">
-            <ImageButton
-                android:id="@+id/btn_barname_haftegi_id"
-                android:layout_margin="15dp"
-                android:layout_width="wrap_content"
-                android:background="@drawable/background_btns"
-                android:padding="15dp"
-                android:src="@drawable/ic_barname_kelasi_24dp"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/barnamehaftegi_image" />
-            <TextView
-                android:id="@+id/txt_barname_haftegi_id"
-                android:textSize="16sp"
-                android:textColor="@color/black_color"
-                android:textAlignment="center"
-                android:text="@string/barname_haftegi"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:layout_marginLeft="20dp" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="0.33">
-            <ImageButton
-                android:contentDescription="@string/barnamekelasi_image"
-                android:id="@+id/btn_barname_kelasi_id"
-                android:layout_margin="15dp"
-                android:layout_width="wrap_content"
-                android:background="@drawable/background_btns"
-                android:padding="15dp"
-                android:src="@drawable/ic_barname_haftegi_24dp"
-                android:layout_height="wrap_content" />
-            <TextView
-                android:id="@+id/txt_barname_kelasi_id"
-                android:textSize="16sp"
-                android:textColor="@color/black_color"
-                android:textAlignment="center"
-                android:text="@string/barname_kelasi"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:layout_marginLeft="20dp" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="0.33">
 
-            <ImageButton
-                android:id="@+id/btn_eteraz_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:background="@drawable/background_btns"
-                android:contentDescription="@string/eteraz_image"
-                android:padding="15dp"
-                android:src="@drawable/ic_eteraz_24dp" />
-            <TextView
-                android:id="@+id/txt_eteraz_id"
-                android:textSize="16sp"
-                android:textColor="@color/black_color"
-                android:textAlignment="center"
-                android:text="@string/eteraz"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:layout_marginLeft="20dp" />
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:baselineAligned="false"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="1"
-        android:layout_margin="5dp">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="0.33">
-            <ImageButton
-                android:contentDescription="@string/karname_image"
-                android:id="@+id/btn_karname_id"
-                android:layout_margin="15dp"
-                android:layout_width="wrap_content"
-                android:background="@drawable/background_btns"
-                android:padding="15dp"
-                android:src="@drawable/ic_karnameh"
-                android:layout_height="wrap_content" />
-            <TextView
-                android:id="@+id/txt_karname_id"
-                android:textSize="16sp"
-                android:textColor="@color/black_color"
-                android:textAlignment="center"
-                android:text="@string/karname"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:layout_marginLeft="35dp" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="0.33">
-            <ImageButton
-                android:contentDescription="@string/listdoros_image"
-                android:id="@+id/btn_list_doros_id"
-                android:layout_margin="15dp"
-                android:layout_width="wrap_content"
-                android:background="@drawable/background_btns"
-                android:padding="15dp"
-                android:src="@drawable/ic_list_doros_24dp"
-                android:layout_height="wrap_content" />
-            <TextView
-                android:id="@+id/txt_list_doros_id"
-                android:textSize="16sp"
-                android:textColor="@color/black_color"
-                android:textAlignment="center"
-                android:text="@string/list_doros"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:layout_marginLeft="20dp" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="0.33">
+        android:layout_height="match_parent">
 
-            <ImageButton
-                android:id="@+id/btn_zaman_bandi_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:background="@drawable/background_btns"
-                android:contentDescription="@string/zamanbandi_image"
-                android:padding="15dp"
-                android:src="@drawable/ic_zaman_bandi_24dp" />
-            <TextView
-                android:id="@+id/txt_zaman_bandi_id"
-                android:textSize="15sp"
-                android:textColor="@color/black_color"
-                android:textAlignment="center"
-                android:text="@string/zaman_bandi"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:layout_marginLeft="15dp" />
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="1"
-        android:baselineAligned="false"
-        android:layout_margin="5dp">
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_weight="0.33">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-            <ImageButton
-                android:id="@+id/btn_kart_id"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:background="@drawable/background_btns"
-                android:contentDescription="@string/kart_image"
-                android:padding="15dp"
-                android:src="@drawable/ic_examcard" />
-            <TextView
-                android:id="@+id/txt_kart_id"
-                android:textSize="16sp"
-                android:textColor="@color/black_color"
-                android:textAlignment="center"
-                android:text="@string/kart"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_margin="5dp"
+                android:baselineAligned="false">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.33">
+                    <ImageButton
+                        android:id="@+id/btn_barname_haftegi_id"
+                        android:layout_margin="15dp"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/background_btns"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_barname_kelasi_24dp"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/barnamehaftegi_image" />
+                    <TextView
+                        android:id="@+id/txt_barname_haftegi_id"
+                        android:textSize="16sp"
+                        android:textColor="@color/black_color"
+                        android:textAlignment="center"
+                        android:text="@string/barname_haftegi"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="20dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.33">
+                    <ImageButton
+                        android:contentDescription="@string/barnamekelasi_image"
+                        android:id="@+id/btn_barname_kelasi_id"
+                        android:layout_margin="15dp"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/background_btns"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_barname_haftegi_24dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/txt_barname_kelasi_id"
+                        android:textSize="16sp"
+                        android:textColor="@color/black_color"
+                        android:textAlignment="center"
+                        android:text="@string/barname_kelasi"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="20dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.33">
+
+                    <ImageButton
+                        android:id="@+id/btn_eteraz_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/background_btns"
+                        android:contentDescription="@string/eteraz_image"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_eteraz_24dp" />
+                    <TextView
+                        android:id="@+id/txt_eteraz_id"
+                        android:textSize="16sp"
+                        android:textColor="@color/black_color"
+                        android:textAlignment="center"
+                        android:text="@string/eteraz"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:baselineAligned="false"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:layout_marginLeft="22dp" />
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.33">
+                    <ImageButton
+                        android:contentDescription="@string/karname_image"
+                        android:id="@+id/btn_karname_id"
+                        android:layout_margin="15dp"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/background_btns"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_karnameh"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/txt_karname_id"
+                        android:textSize="16sp"
+                        android:textColor="@color/black_color"
+                        android:textAlignment="center"
+                        android:text="@string/karname"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="35dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.33">
+                    <ImageButton
+                        android:contentDescription="@string/listdoros_image"
+                        android:id="@+id/btn_list_doros_id"
+                        android:layout_margin="15dp"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/background_btns"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_list_doros_24dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/txt_list_doros_id"
+                        android:textSize="16sp"
+                        android:textColor="@color/black_color"
+                        android:textAlignment="center"
+                        android:text="@string/list_doros"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="20dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.33">
+
+                    <ImageButton
+                        android:id="@+id/btn_zaman_bandi_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/background_btns"
+                        android:contentDescription="@string/zamanbandi_image"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_zaman_bandi_24dp" />
+                    <TextView
+                        android:id="@+id/txt_zaman_bandi_id"
+                        android:textSize="15sp"
+                        android:textColor="@color/black_color"
+                        android:textAlignment="center"
+                        android:text="@string/zaman_bandi"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:baselineAligned="false"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.33">
+
+                    <ImageButton
+                        android:id="@+id/btn_kart_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/background_btns"
+                        android:contentDescription="@string/kart_image"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_examcard" />
+                    <TextView
+                        android:id="@+id/txt_kart_id"
+                        android:textSize="16sp"
+                        android:textColor="@color/black_color"
+                        android:textAlignment="center"
+                        android:text="@string/kart"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="22dp" />
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

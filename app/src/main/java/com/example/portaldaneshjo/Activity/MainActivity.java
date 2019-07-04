@@ -3,6 +3,7 @@ package com.example.portaldaneshjo.Activity;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
@@ -46,11 +47,11 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout_id);
         navigationView = (NavigationView) findViewById(R.id.navigation_view_id);
 
-        ActionBar actionBar = getSupportActionBar();
+        final ActionBar actionBar = getSupportActionBar();
 
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,0,0);
-        drawerLayout.addDrawerListener(toggle);
+        final ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,0,0);
         toggle.syncState();
+        drawerLayout.addDrawerListener(toggle);
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -107,16 +108,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
-            case R.id.kholase_vaze_tahsili_id:{
-                Toast.makeText(this, "خلاصه وضعیت تحصیلی", Toast.LENGTH_SHORT).show();
-                break;
-            }
             case R.id.change_pass_id:{
-                Toast.makeText(this, "تغییر رمز عبور", Toast.LENGTH_SHORT).show();
+                Snackbar snackbar = Snackbar.make(viewPager,"تغییر رمز عبور ",Snackbar.LENGTH_SHORT);
+                snackbar.show();
                 break;
             }
             case R.id.exit_tool_id:{
-                Toast.makeText(this, "خروج", Toast.LENGTH_SHORT).show();
+                Snackbar snackbar = Snackbar.make(viewPager,"خروج ",Snackbar.LENGTH_SHORT);
+                snackbar.show();
                 break;
             }
         }

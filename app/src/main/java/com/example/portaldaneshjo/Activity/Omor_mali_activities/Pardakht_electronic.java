@@ -1,6 +1,7 @@
 package com.example.portaldaneshjo.Activity.Omor_mali_activities;
 
 import android.graphics.Typeface;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -45,10 +46,12 @@ public class Pardakht_electronic extends AppCompatActivity {
         btn_melli.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (txt_mablaghe_pardakhti.getText()!=null){
-                    Toast.makeText(Pardakht_electronic.this, "درگاه پرداخت", Toast.LENGTH_SHORT).show();
+                if (txt_mablaghe_pardakhti.getText().length()!=0){
+                    Snackbar snackbar = Snackbar.make(v,"درگاه پرداخت ",Snackbar.LENGTH_SHORT);
+                    snackbar.show();
                 }else {
-                    Toast.makeText(Pardakht_electronic.this, "لطفا مبلغ را وارد نمایید !", Toast.LENGTH_SHORT).show();
+                    Snackbar snackbar = Snackbar.make(v,"لطفا مبلغ را وارد کنید !",Snackbar.LENGTH_SHORT);
+                    snackbar.show();
                 }
             }
         });
