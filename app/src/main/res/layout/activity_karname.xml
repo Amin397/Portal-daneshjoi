@@ -17,7 +17,7 @@
     <Spinner
         android:id="@+id/spn_nimsaltahsili_karname_id"
         android:layout_below="@id/toolbar_karname_id"
-        android:layout_margin="15dp"
+        android:layout_margin="@dimen/margin_10dp"
         style="@style/DropSpinner"
         android:textAlignment="center"
         android:layout_width="match_parent"
