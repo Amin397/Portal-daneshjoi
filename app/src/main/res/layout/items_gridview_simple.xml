@@ -23,10 +23,10 @@
         android:layout_alignEnd="@id/img_items_id"
         android:layout_alignRight="@id/img_items_id"
         android:layout_marginTop="@dimen/margin_15dp"
-        android:maxLines="2"
+        android:maxLines="1"
         android:textAlignment="center"
         android:textColor="@color/black_color"
-        android:textSize="@dimen/textsize_18sp" />
+        android:textSize="@dimen/textsize_14sp" />
 
 
 </RelativeLayout>

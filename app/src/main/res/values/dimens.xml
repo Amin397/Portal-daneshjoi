@@ -18,5 +18,7 @@
     <dimen name="textsize_20sp">20sp</dimen>
     <dimen name="textsize_26sp">26sp</dimen>
     <dimen name="padding_15dp">15dp</dimen>
+    <dimen name="elevation_8dp">8dp</dimen>
+    <dimen name="textsize_14sp">14sp</dimen>
 
 </resources>

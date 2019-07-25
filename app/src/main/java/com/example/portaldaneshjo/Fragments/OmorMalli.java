@@ -24,7 +24,7 @@ import com.example.portaldaneshjo.R;
 public class OmorMalli extends Fragment {
 
     private GridView gridView;
-    private String[] nameitems = {"پرداخت الکترونیک","وضعیت مالی","محاسبه شهریه","پرداخت های ناموفق"};
+    private String[] nameitems = {"پرداخت الکترونیک","وضعیت مالی","محاسبه شهریه","پرداخت ناموفق"};
     private Integer[] picitems = {R.drawable.ic_pardakht_e,R.drawable.ic_vazeiate_mali,R.drawable.ic_mohasebeh_shahrieh,
             R.drawable.ic_payment_error};
 

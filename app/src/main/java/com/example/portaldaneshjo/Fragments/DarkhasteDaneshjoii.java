@@ -15,7 +15,7 @@ import com.example.portaldaneshjo.R;
 public class DarkhasteDaneshjoii extends Fragment {
 
     private GridView gridView;
-    private final String[] nameitems = {"درخواست خوابگاه","پارکینگ","رزرو غذا","درخواست وام","گواهی اشتغال","مرخصی تحصیلی"};
+    private final String[] nameitems = {"خوابگاه","پارکینگ","رزرو غذا","درخواست وام","گواهی اشتغال","مرخصی تحصیلی"};
     private final Integer[] picitems = {R.drawable.ic_khabgah_24dp,R.drawable.ic_parking,R.drawable.ic_ghaza_24dp,
             R.drawable.ic_vam,R.drawable.ic_eshteqal,R.drawable.ic_morakhasi_24dp};
 

@@ -130,6 +130,7 @@
                 android:layout_marginTop="16dp"
                 android:background="@color/colorAccent"
                 android:text="@string/log_in"
+                android:elevation="@dimen/elevation_8dp"
                 android:fontFamily="@font/kodak"
                 android:textSize="20sp"
                 android:textColor="@color/white_color"
