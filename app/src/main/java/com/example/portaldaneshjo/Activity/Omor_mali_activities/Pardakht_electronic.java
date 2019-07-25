@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.portaldaneshjo.R;
 
@@ -27,7 +26,7 @@ public class Pardakht_electronic extends AppCompatActivity {
 
         toolbar =(Toolbar) findViewById(R.id.toolbar_pardakht_e_id);
         txt_bank_names = (TextView) findViewById(R.id.txt_bank_name_id);
-        txt_content = (TextView) findViewById(R.id.txt_content_id);
+        txt_content = (TextView) findViewById(R.id.txt_items_id);
         txt_mablagh = (TextView) findViewById(R.id.txt_mablagh_id);
         txt_tozih = (TextView) findViewById(R.id.txt_tozih_id);
         btn_melli = (ImageButton) findViewById(R.id.btn_dargah_pardakht_id);
