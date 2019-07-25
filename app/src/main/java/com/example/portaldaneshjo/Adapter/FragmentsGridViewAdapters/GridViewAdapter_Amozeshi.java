@@ -8,19 +8,21 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.example.portaldaneshjo.Activity.Omor_mali_activities.Formol_shahrie;
-import com.example.portaldaneshjo.Activity.Omor_mali_activities.Pardakht_electronic;
-import com.example.portaldaneshjo.Activity.Omor_mali_activities.Pardakht_namovafagh;
-import com.example.portaldaneshjo.Activity.Omor_mali_activities.Vaziate_mali;
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.BarnameHaftegi;
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.BarnameKelasi;
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.EterazNomre;
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.Karname;
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.KartEmtehan;
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.ListDoros;
+import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.ZamanBandi;
 import com.example.portaldaneshjo.R;
 
-public class GridViewAdapter_Mali extends BaseAdapter {
+public class GridViewAdapter_Amozeshi extends BaseAdapter {
     private Context context;
     private String[] nameitems;
     private Integer[] picitems;
 
-    public GridViewAdapter_Mali(Context context, String[] nameitems, Integer[] picitems) {
+    public GridViewAdapter_Amozeshi(Context context, String[] nameitems, Integer[] picitems) {
         this.context = context;
         this.nameitems = nameitems;
         this.picitems = picitems;
@@ -62,17 +64,26 @@ public class GridViewAdapter_Mali extends BaseAdapter {
             @Override
             public void onClick(View v) {
                 switch (nameitems[position]){
-                    case "پرداخت الکترونیک":{
-                        v.getContext().startActivity(new Intent(context, Pardakht_electronic.class));break;
+                    case "برنامه هفتگی":{
+                        v.getContext().startActivity(new Intent(context, BarnameHaftegi.class));break;
                     }
-                    case "وضعیت مالی":{
-                        v.getContext().startActivity(new Intent(context, Vaziate_mali.class));break;
+                    case "برنامه کلاسی":{
+                        v.getContext().startActivity(new Intent(context, BarnameKelasi.class));break;
                     }
-                    case "محاسبه شهریه":{
-                        v.getContext().startActivity(new Intent(context, Formol_shahrie.class));break;
+                    case "اعتراض نمرات":{
+                        v.getContext().startActivity(new Intent(context, EterazNomre.class));break;
                     }
-                    case "پرداخت های ناموفق":{
-                        v.getContext().startActivity(new Intent(context, Pardakht_namovafagh.class));break;
+                    case "کارنامه":{
+                        v.getContext().startActivity(new Intent(context, Karname.class));break;
+                    }
+                    case "لیست دروس":{
+                        v.getContext().startActivity(new Intent(context, ListDoros.class));break;
+                    }
+                    case "زمان بندی ثبت نام":{
+                        v.getContext().startActivity(new Intent(context, ZamanBandi.class));break;
+                    }
+                    case "کارت امتحان":{
+                        v.getContext().startActivity(new Intent(context, KartEmtehan.class));break;
                     }
                 }
             }
