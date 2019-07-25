@@ -43,7 +43,7 @@ public class GridViewAdapter_Amozeshi extends BaseAdapter {
         return position;
     }
 
-    public class Holder{
+    private class Holder{
         ImageView imageView;
         TextView textView;
     }
