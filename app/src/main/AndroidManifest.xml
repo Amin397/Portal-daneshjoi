@@ -14,62 +14,65 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.Omor_amozeshi_activities.ShowKartEmtehan"
-            android:parentActivityName=".Activity.MainActivity"/>
+        <activity android:name=".Activity.Other_Activitys.Sabte_mobile"
+            android:parentActivityName=".Activity.Other_Activitys.MainActivity"/>
+        <activity
+            android:name=".Activity.Omor_amozeshi_activities.ShowKartEmtehan"
+            android:parentActivityName=".Activity.Other_Activitys.MainActivity" />
         <activity
             android:name=".Activity.Darkhast_daneshjoii_activities.Morakhasi"
-            android:parentActivityName=".Activity.MainActivity" />
+            android:parentActivityName=".Activity.Other_Activitys.MainActivity" />
         <activity
             android:name=".Activity.Darkhast_daneshjoii_activities.Eshteghal"
-            android:parentActivityName=".Activity.MainActivity" />
+            android:parentActivityName=".Activity.Other_Activitys.MainActivity" />
         <activity
             android:name=".Activity.Darkhast_daneshjoii_activities.Vam"
-            android:parentActivityName=".Activity.MainActivity" />
+            android:parentActivityName=".Activity.Other_Activitys.MainActivity" />
         <activity
             android:name=".Activity.Darkhast_daneshjoii_activities.Ghaza"
-            android:parentActivityName=".Activity.MainActivity" />
+            android:parentActivityName=".Activity.Other_Activitys.MainActivity" />
         <activity
             android:name=".Activity.Darkhast_daneshjoii_activities.Parking"
-            android:parentActivityName=".Activity.MainActivity" />
+            android:parentActivityName=".Activity.Other_Activitys.MainActivity" />
         <activity
             android:name=".Activity.Darkhast_daneshjoii_activities.Khabgah"
-            android:parentActivityName=".Activity.MainActivity" />
+            android:parentActivityName=".Activity.Other_Activitys.MainActivity" />
         <activity
             android:name=".Activity.Omor_amozeshi_activities.KartEmtehan"
-            android:parentActivityName=".Activity.MainActivity" />
+            android:parentActivityName=".Activity.Other_Activitys.MainActivity" />
         <activity
             android:name=".Activity.Omor_amozeshi_activities.ZamanBandi"
-            android:parentActivityName=".Activity.MainActivity" />
+            android:parentActivityName=".Activity.Other_Activitys.MainActivity" />
         <activity
             android:name=".Activity.Omor_amozeshi_activities.ListDoros"
-            android:parentActivityName=".Activity.MainActivity" />
+            android:parentActivityName=".Activity.Other_Activitys.MainActivity" />
         <activity
             android:name=".Activity.Omor_amozeshi_activities.Karname"
-            android:parentActivityName=".Activity.MainActivity" />
+            android:parentActivityName=".Activity.Other_Activitys.MainActivity" />
         <activity
             android:name=".Activity.Omor_amozeshi_activities.EterazNomre"
-            android:parentActivityName=".Activity.MainActivity" />
+            android:parentActivityName=".Activity.Other_Activitys.MainActivity" />
         <activity
             android:name=".Activity.Omor_amozeshi_activities.BarnameKelasi"
-            android:parentActivityName=".Activity.MainActivity" />
+            android:parentActivityName=".Activity.Other_Activitys.MainActivity" />
         <activity
             android:name=".Activity.Omor_amozeshi_activities.BarnameHaftegi"
-            android:parentActivityName=".Activity.MainActivity" />
+            android:parentActivityName=".Activity.Other_Activitys.MainActivity" />
         <activity
             android:name=".Activity.Omor_mali_activities.Pardakht_namovafagh"
-            android:parentActivityName=".Activity.MainActivity" />
+            android:parentActivityName=".Activity.Other_Activitys.MainActivity" />
         <activity
             android:name=".Activity.Omor_mali_activities.Formol_shahrie"
-            android:parentActivityName=".Activity.MainActivity" />
+            android:parentActivityName=".Activity.Other_Activitys.MainActivity" />
         <activity
             android:name=".Activity.Omor_mali_activities.Vaziate_mali"
-            android:parentActivityName=".Activity.MainActivity" />
+            android:parentActivityName=".Activity.Other_Activitys.MainActivity" />
         <activity
             android:name=".Activity.Omor_mali_activities.Pardakht_electronic"
-            android:parentActivityName=".Activity.MainActivity" />
-        <activity android:name=".Activity.LoginActivity" />
+            android:parentActivityName=".Activity.Other_Activitys.MainActivity" />
+        <activity android:name=".Activity.Other_Activitys.LoginActivity" />
         <activity
-            android:name=".Activity.Splash"
+            android:name=".Activity.Other_Activitys.Splash"
             android:screenOrientation="portrait"
             android:theme="@style/splash">
             <intent-filter>
@@ -78,7 +81,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.MainActivity" />
+        <activity
+            android:name=".Activity.Other_Activitys.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

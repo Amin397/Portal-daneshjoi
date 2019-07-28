@@ -104,4 +104,8 @@
     <string name="shenase">شناسه</string>
     <string name="test01">65215485</string>
     <string name="test02">54875125</string>
+    <string name="feeli_mobile">شماره موبایل فعلی</string>
+    <string name="shomarefeli">شماره موبایل فعلی</string>
+    <string name="shomarejadid">شماره موبایل جدید</string>
+    <string name="mobilesubmit">ثبت موبایل</string>
 </resources>
