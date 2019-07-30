@@ -108,4 +108,7 @@
     <string name="shomarefeli">شماره موبایل فعلی</string>
     <string name="shomarejadid">شماره موبایل جدید</string>
     <string name="mobilesubmit">ثبت موبایل</string>
+    <string name="nowpass">رمز عبور فعلی</string>
+    <string name="newpass">رمز عبور جدید</string>
+    <string name="acceptnewpass">تایید رمز عبور جدید</string>
 </resources>

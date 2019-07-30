@@ -14,8 +14,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.Other_Activitys.Sabte_mobile"
+        <activity android:name=".Activity.Other_Activitys.Changepassword"
             android:parentActivityName=".Activity.Other_Activitys.MainActivity"/>
+        <activity
+            android:name=".Activity.Other_Activitys.Sabte_mobile"
+            android:parentActivityName=".Activity.Other_Activitys.MainActivity" />
         <activity
             android:name=".Activity.Omor_amozeshi_activities.ShowKartEmtehan"
             android:parentActivityName=".Activity.Other_Activitys.MainActivity" />

@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
@@ -15,6 +16,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.example.portaldaneshjo.Fragments.DarkhasteDaneshjoii;
@@ -51,8 +53,8 @@ public class MainActivity extends AppCompatActivity {
         final ActionBar actionBar = getSupportActionBar();
 
         final ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,0,0);
-        toggle.syncState();
         drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -80,7 +82,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     }
                     case R.id.phone_id:{
-                        startActivity(new Intent(getApplicationContext(),Sabte_mobile.class));break;
+                        startActivity(new Intent(getApplicationContext(),Sabte_mobile.class));
+                        drawerLayout.closeDrawers();
+                        break;
                     }
                     case R.id.exit_id:{
                         finish();break;
@@ -109,9 +113,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.change_pass_id:{
-                Snackbar snackbar = Snackbar.make(viewPager,"تغییر رمز عبور ",Snackbar.LENGTH_SHORT);
-                snackbar.show();
-                break;
+                startActivity(new Intent(getApplicationContext(),Changepassword.class));break;
             }
             case R.id.exit_tool_id:{
                 finish();
