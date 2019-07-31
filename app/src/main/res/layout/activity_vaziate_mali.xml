@@ -9,6 +9,7 @@
     tools:context=".Activity.Omor_mali_activities.Vaziate_mali">
 
     <android.support.v7.widget.Toolbar
+        android:elevation="@dimen/elevation_5dp"
         android:layout_width="match_parent"
         android:background="@color/colorPrimary"
         android:id="@+id/toolbar_vaziat_id"

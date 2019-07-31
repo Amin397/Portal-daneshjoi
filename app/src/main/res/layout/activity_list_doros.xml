@@ -8,6 +8,7 @@
     tools:context=".Activity.Omor_amozeshi_activities.ListDoros">
 
     <android.support.v7.widget.Toolbar
+        android:elevation="@dimen/elevation_5dp"
         android:id="@+id/toolbar_listdoros_id"
         android:background="@color/colorPrimary"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"

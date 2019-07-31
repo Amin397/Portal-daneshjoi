@@ -10,7 +10,7 @@
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
-        android:elevation="5dp"
+        android:elevation="@dimen/elevation_5dp"
         android:background="@color/colorPrimary"
         android:id="@+id/toolbar_kholase_tahsili_id"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"

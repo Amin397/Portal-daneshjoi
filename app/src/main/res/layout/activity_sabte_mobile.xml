@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:background="@color/colorPrimary"
         android:id="@+id/toolbar_sabtemobile_id"
+        android:elevation="@dimen/elevation_5dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:layout_height="?attr/actionBarSize"/>
 
@@ -39,7 +40,9 @@
                     <android.support.v7.widget.AppCompatEditText
                         android:layout_width="match_parent"
                         android:id="@+id/mobile_feli_id"
+                        android:background="@drawable/background_edit_text"
                         android:textSize="@dimen/textsize_18sp"
+                        android:padding="@dimen/padding_8dp"
                         android:hint="@string/shomarefeli"
                         android:inputType="number"
                         android:textAlignment="center"
@@ -59,6 +62,8 @@
                         android:layout_width="match_parent"
                         android:id="@+id/mobile_jadid_id"
                         android:textSize="@dimen/textsize_18sp"
+                        android:background="@drawable/background_edit_text"
+                        android:padding="@dimen/padding_8dp"
                         android:hint="@string/shomarejadid"
                         android:inputType="number"
                         android:textAlignment="center"

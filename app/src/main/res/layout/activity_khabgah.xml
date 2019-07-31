@@ -8,6 +8,7 @@
     tools:context=".Activity.Darkhast_daneshjoii_activities.Khabgah">
 
     <android.support.v7.widget.Toolbar
+        android:elevation="@dimen/elevation_5dp"
         android:id="@+id/toolbar_khabgah_id"
         android:background="@color/colorPrimary"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
