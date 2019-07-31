@@ -1,16 +1,16 @@
 package com.example.portaldaneshjo.Activity.Other_Activitys;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
-import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -18,7 +18,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
-
 import com.example.portaldaneshjo.Fragments.DarkhasteDaneshjoii;
 import com.example.portaldaneshjo.Fragments.EntekhabVahed;
 import com.example.portaldaneshjo.Fragments.OmorAmozeshi;
@@ -74,7 +73,8 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     }
                     case R.id.kholase_vaze_tahsili_id:{
-                        Toast.makeText(MainActivity.this, "خلاصه وضعیت تحصیلی", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(getApplicationContext(),Kholase_tahsili.class));
+                        drawerLayout.closeDrawers();break;
 
                     }
                     case R.id.map_id:{
@@ -83,8 +83,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                     case R.id.phone_id:{
                         startActivity(new Intent(getApplicationContext(),Sabte_mobile.class));
-                        drawerLayout.closeDrawers();
-                        break;
+                        drawerLayout.closeDrawers();break;
                     }
                     case R.id.exit_id:{
                         finish();break;

@@ -21,5 +21,6 @@
     <dimen name="elevation_8dp">8dp</dimen>
     <dimen name="textsize_14sp">14sp</dimen>
     <dimen name="textsize_16sp">16sp</dimen>
-
+    <dimen name="cardelevation_3dp">3dp</dimen>
+    <dimen name="elevation_5dp">5dp</dimen>
 </resources>

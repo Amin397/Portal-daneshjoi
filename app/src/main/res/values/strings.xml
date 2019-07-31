@@ -111,4 +111,14 @@
     <string name="nowpass">رمز عبور فعلی</string>
     <string name="newpass">رمز عبور جدید</string>
     <string name="acceptnewpass">تایید رمز عبور جدید</string>
+    <string name="jahateeraee">جهت ارائه به</string>
+    <string name="elatedarkhast">علت درخواست</string>
+    <string name="submitreq">ثبت درخواست</string>
+    <string name="modalekol">معدل کل :</string>
+    <string name="kolvahedgh">کل واحد قبولی :</string>
+    <string name="vahedentekhab">کل واحد انتخابی :</string>
+    <string name="moadeleghabl">معدل ترم قبل :</string>
+    <string name="vaziatetermghabl">وضعیت ترم قبل :</string>
+    <string name="saghfevahed">سقف واحد :</string>
+    <string name="mashrotterms">ترم های مشروط :</string>
 </resources>
