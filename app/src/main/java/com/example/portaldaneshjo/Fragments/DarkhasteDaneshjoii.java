@@ -7,10 +7,14 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
 import android.widget.GridView;
 
 import com.example.portaldaneshjo.Adapter.FragmentsGridViewAdapters.GridViewAdapter_Darkhast;
 import com.example.portaldaneshjo.R;
+import com.labo.kaji.fragmentanimations.CubeAnimation;
+import com.labo.kaji.fragmentanimations.FlipAnimation;
+import com.labo.kaji.fragmentanimations.MoveAnimation;
 
 public class DarkhasteDaneshjoii extends Fragment {
 
@@ -33,5 +37,10 @@ public class DarkhasteDaneshjoii extends Fragment {
         gridView.setAdapter(new GridViewAdapter_Darkhast(getActivity(),nameitems,picitems));
 
         return view;
+    }
+
+    @Override
+    public Animation onCreateAnimation(int transit, boolean enter, int nextAnim) {
+        return FlipAnimation.create(FlipAnimation.RIGHT, enter, 2);
     }
 }
