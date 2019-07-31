@@ -111,4 +111,7 @@
     <string name="nowpass">رمز عبور فعلی</string>
     <string name="newpass">رمز عبور جدید</string>
     <string name="acceptnewpass">تایید رمز عبور جدید</string>
+    <string name="jahateeraee">جهت ارائه به</string>
+    <string name="elatedarkhast">علت درخواست</string>
+    <string name="submitreq">ثبت درخواست</string>
 </resources>
