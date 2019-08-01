@@ -1,5 +1,6 @@
 package com.example.portaldaneshjo.Adapter.FragmentsGridViewAdapters;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -52,6 +53,7 @@ public class GridViewAdapter_Darkhast extends BaseAdapter {
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
         Holder holder = new Holder();
+        final Activity a = (Activity) context;
         View view;
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         view = layoutInflater.inflate(R.layout.items_gridview_simple,null);
@@ -66,22 +68,29 @@ public class GridViewAdapter_Darkhast extends BaseAdapter {
             public void onClick(View v) {
                 switch (nameitems[position]){
                     case "درخواست خوابگاه":{
-                        v.getContext().startActivity(new Intent(context, Khabgah.class));break;
+                        v.getContext().startActivity(new Intent(context, Khabgah.class));
+                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
                     }
                     case "پارکینگ":{
-                        v.getContext().startActivity(new Intent(context, Parking.class));break;
+                        v.getContext().startActivity(new Intent(context, Parking.class));
+                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
                     }
                     case "رزرو غذا":{
-                        v.getContext().startActivity(new Intent(context, Ghaza.class));break;
+                        v.getContext().startActivity(new Intent(context, Ghaza.class));
+                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
                     }
                     case "درخواست وام":{
-                        v.getContext().startActivity(new Intent(context, Vam.class));break;
+                        v.getContext().startActivity(new Intent(context, Vam.class));
+                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
                     }
                     case "گواهی اشتغال":{
-                        v.getContext().startActivity(new Intent(context, Eshteghal.class));break;
+                        v.getContext().startActivity(new Intent(context, Eshteghal.class));
+                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
                     }
                     case "مرخصی تحصیلی":{
-                        v.getContext().startActivity(new Intent(context, Morakhasi.class));break;
+                        v.getContext().startActivity(new Intent(context, Morakhasi.class));
+                        a.overridePendingTransition(R.anim.enter,R.anim.exit);
+                        break;
                     }
                 }
             }

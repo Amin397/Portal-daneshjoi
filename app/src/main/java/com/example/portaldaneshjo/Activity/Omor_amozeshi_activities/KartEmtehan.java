@@ -47,6 +47,7 @@ public class KartEmtehan extends AppCompatActivity {
             public void onClick(View v) {
                 if (checkBox.isChecked()){
                     startActivity(new Intent(KartEmtehan.this,ShowKartEmtehan.class));
+                    overridePendingTransition(R.anim.enter,R.anim.exit);
                 }
                 else {
                     Snackbar snackbar = Snackbar.make(v,"لطفا مطالب و قوانین فوق را تایید نمایید !",Snackbar.LENGTH_SHORT);

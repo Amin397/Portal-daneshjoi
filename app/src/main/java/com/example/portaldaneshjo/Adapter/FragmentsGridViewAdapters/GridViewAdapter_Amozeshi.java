@@ -1,5 +1,6 @@
 package com.example.portaldaneshjo.Adapter.FragmentsGridViewAdapters;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -51,6 +52,7 @@ public class GridViewAdapter_Amozeshi extends BaseAdapter {
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
         Holder holder = new Holder();
+        final Activity a = (Activity) context;
         View view;
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         view = layoutInflater.inflate(R.layout.items_gridview_simple,null);
@@ -65,25 +67,32 @@ public class GridViewAdapter_Amozeshi extends BaseAdapter {
             public void onClick(View v) {
                 switch (nameitems[position]){
                     case "برنامه هفتگی":{
-                        v.getContext().startActivity(new Intent(context, BarnameHaftegi.class));break;
+                        v.getContext().startActivity(new Intent(context, BarnameHaftegi.class));
+                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
                     }
                     case "برنامه کلاسی":{
-                        v.getContext().startActivity(new Intent(context, BarnameKelasi.class));break;
+                        v.getContext().startActivity(new Intent(context, BarnameKelasi.class));
+                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
                     }
                     case "اعتراض نمرات":{
-                        v.getContext().startActivity(new Intent(context, EterazNomre.class));break;
+                        v.getContext().startActivity(new Intent(context, EterazNomre.class));
+                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
                     }
                     case "کارنامه":{
-                        v.getContext().startActivity(new Intent(context, Karname.class));break;
+                        v.getContext().startActivity(new Intent(context, Karname.class));
+                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
                     }
                     case "لیست دروس":{
-                        v.getContext().startActivity(new Intent(context, ListDoros.class));break;
+                        v.getContext().startActivity(new Intent(context, ListDoros.class));
+                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
                     }
                     case "زمان بندی ثبت نام":{
-                        v.getContext().startActivity(new Intent(context, ZamanBandi.class));break;
+                        v.getContext().startActivity(new Intent(context, ZamanBandi.class));
+                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
                     }
                     case "کارت امتحان":{
-                        v.getContext().startActivity(new Intent(context, KartEmtehan.class));break;
+                        v.getContext().startActivity(new Intent(context, KartEmtehan.class));
+                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
                     }
                 }
             }

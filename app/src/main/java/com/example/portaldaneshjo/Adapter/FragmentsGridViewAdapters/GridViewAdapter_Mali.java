@@ -1,5 +1,6 @@
 package com.example.portaldaneshjo.Adapter.FragmentsGridViewAdapters;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -47,9 +48,10 @@ public class GridViewAdapter_Mali extends BaseAdapter {
     }
 
     @Override
-    public View getView(final int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, final View convertView, ViewGroup parent) {
         Holder holder = new Holder();
-        View view;
+        final Activity a = (Activity) context;
+        final View view;
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         view = layoutInflater.inflate(R.layout.items_gridview_simple,null);
         holder.imageView = (ImageView) view.findViewById(R.id.img_items_id);
@@ -63,16 +65,20 @@ public class GridViewAdapter_Mali extends BaseAdapter {
             public void onClick(View v) {
                 switch (nameitems[position]){
                     case "پرداخت الکترونیک":{
-                        v.getContext().startActivity(new Intent(context, Pardakht_electronic.class));break;
+                        v.getContext().startActivity(new Intent(context, Pardakht_electronic.class));
+                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
                     }
                     case "وضعیت مالی":{
-                        v.getContext().startActivity(new Intent(context, Vaziate_mali.class));break;
+                        v.getContext().startActivity(new Intent(context, Vaziate_mali.class));
+                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
                     }
                     case "محاسبه شهریه":{
-                        v.getContext().startActivity(new Intent(context, Formol_shahrie.class));break;
+                        v.getContext().startActivity(new Intent(context, Formol_shahrie.class));
+                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
                     }
                     case "پرداخت های ناموفق":{
-                        v.getContext().startActivity(new Intent(context, Pardakht_namovafagh.class));break;
+                        v.getContext().startActivity(new Intent(context, Pardakht_namovafagh.class));
+                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
                     }
                 }
             }
