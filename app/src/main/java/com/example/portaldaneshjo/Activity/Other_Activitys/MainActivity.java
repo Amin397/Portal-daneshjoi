@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                     case R.id.kholase_vaze_tahsili_id:{
                         startActivity(new Intent(getApplicationContext(),Kholase_tahsili.class));
+                        overridePendingTransition(R.anim.enter,R.anim.exit);
                         drawerLayout.closeDrawers();break;
 
                     }
@@ -83,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                     case R.id.phone_id:{
                         startActivity(new Intent(getApplicationContext(),Sabte_mobile.class));
+                        overridePendingTransition(R.anim.enter,R.anim.exit);
                         drawerLayout.closeDrawers();break;
                     }
                     case R.id.exit_id:{
@@ -112,7 +114,8 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.change_pass_id:{
-                startActivity(new Intent(getApplicationContext(),Changepassword.class));break;
+                startActivity(new Intent(getApplicationContext(),Changepassword.class));
+                overridePendingTransition(R.anim.enter,R.anim.exit);break;
             }
             case R.id.exit_tool_id:{
                 finish();
@@ -125,10 +128,9 @@ public class MainActivity extends AppCompatActivity {
         int[] ids = {R.drawable.mali,
                 R.drawable.ic_amozeshi_24dp,
                 R.drawable.ic_darkhast_24dp,R.drawable.ic_vahed_24dp};
-        int selectedColor = Color.parseColor("#ffe100");
+        int selectedColor = Color.parseColor("#C70000");
         int unSelectedColor = Color.parseColor("#ffffff");
         Util.setupTabIcons(getApplicationContext(),tabLayout,ids,1,selectedColor,unSelectedColor);
-
     }
 
     private void setUpViewPager(ViewPager viewPager) {
