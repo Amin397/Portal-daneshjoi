@@ -29,6 +29,10 @@ public class EntekhabVahed extends Fragment {
 
     @Override
     public Animation onCreateAnimation(int transit, boolean enter, int nextAnim) {
-        return FlipAnimation.create(FlipAnimation.RIGHT, enter, 2);
+        if (enter) {
+            return CubeAnimation.create(CubeAnimation.DOWN, enter, 2);
+        } else {
+            return CubeAnimation.create(CubeAnimation.UP, enter, 2);
+        }
     }
 }
