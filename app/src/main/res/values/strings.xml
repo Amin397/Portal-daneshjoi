@@ -121,4 +121,10 @@
     <string name="vaziatetermghabl">وضعیت ترم قبل :</string>
     <string name="saghfevahed">سقف واحد :</string>
     <string name="mashrotterms">ترم های مشروط :</string>
+    <string name="error_vahed">error_vahed</string>
+    <string name="bedehkar0">شما مبلغ 10000 تومان بدهکار هستید !</string>
+    <string name="zaman0">لطفا در زمان تعیین شده مراجعه فرمایید !</string>
+    <string name="pardakhtshahrie">پرداخت شهریه</string>
+    <string name="faalast">سامانه انتخاب واحد هم اکنون برای شما فعال میباشد !</string>
+    <string name="enterentekhab">ورود به انتخاب واحد</string>
 </resources>

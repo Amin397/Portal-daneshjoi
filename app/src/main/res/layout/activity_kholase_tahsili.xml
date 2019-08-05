@@ -21,7 +21,6 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_10dp"
         android:layout_centerInParent="true"
-        app:cardCornerRadius="@dimen/cardelevation_3dp"
         app:cardElevation="@dimen/cardelevation_3dp">
 
         <RelativeLayout

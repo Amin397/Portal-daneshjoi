@@ -8,6 +8,7 @@
     <GridView
         android:id="@+id/grid_amozeshi_id"
         android:numColumns="3"
+        android:elevation="@dimen/cardelevation_3dp"
         android:layout_margin="@dimen/margin_5dp"
         android:verticalSpacing="@dimen/margin_5dp"
         android:layout_width="match_parent"

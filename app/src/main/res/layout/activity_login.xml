@@ -131,6 +131,7 @@
                 android:background="@color/colorAccent"
                 android:text="@string/log_in"
                 android:fontFamily="@font/kodak"
+                tools:ignore="ButtonStyle"
                 android:textSize="20sp"
                 android:textColor="@color/white_color"
                 android:textStyle="bold" />

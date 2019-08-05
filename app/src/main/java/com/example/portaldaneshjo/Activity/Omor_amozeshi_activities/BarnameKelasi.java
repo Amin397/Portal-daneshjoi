@@ -7,9 +7,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Spinner;
-import android.widget.Toast;
 
-import com.example.portaldaneshjo.Adapter.SpinnerAdapter;
+import com.example.portaldaneshjo.Adapter.SpinnerAdapter_Nimsal;
 import com.example.portaldaneshjo.Model.Nimsaltahsili;
 import com.example.portaldaneshjo.R;
 
@@ -19,7 +18,7 @@ public class BarnameKelasi extends AppCompatActivity {
 
     Toolbar toolbar;
     private Spinner spinner;
-    private SpinnerAdapter sAdapter;
+    private SpinnerAdapter_Nimsal sAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +38,7 @@ public class BarnameKelasi extends AppCompatActivity {
         nimsaltahsili.add(new Nimsaltahsili("نیمسال اول 98 - 99"));
         nimsaltahsili.add(new Nimsaltahsili("نیمسال دوم 98 - 99"));
 
-        sAdapter = new SpinnerAdapter(BarnameKelasi.this,nimsaltahsili);
+        sAdapter = new SpinnerAdapter_Nimsal(BarnameKelasi.this,nimsaltahsili);
         spinner.setAdapter(sAdapter);
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

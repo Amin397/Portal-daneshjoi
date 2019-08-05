@@ -9,9 +9,9 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
+
 import com.example.portaldaneshjo.Adapter.ListViewAdapter_VaziateMali;
-import com.example.portaldaneshjo.Adapter.SpinnerAdapter;
+import com.example.portaldaneshjo.Adapter.SpinnerAdapter_Nimsal;
 import com.example.portaldaneshjo.Model.ListItem_VaziateMali;
 import com.example.portaldaneshjo.Model.Nimsaltahsili;
 import com.example.portaldaneshjo.R;
@@ -22,7 +22,7 @@ public class Vaziate_mali extends AppCompatActivity {
 
      private Toolbar toolbar;
      private Spinner spinner;
-     private SpinnerAdapter sAdapter;
+     private SpinnerAdapter_Nimsal sAdapter;
      private ListView list_vaziat;
      private ArrayList<ListItem_VaziateMali> listItemVaziateMalis;
      private ListViewAdapter_VaziateMali listAdapter;
@@ -51,7 +51,7 @@ public class Vaziate_mali extends AppCompatActivity {
          nimsaltahsili.add(new Nimsaltahsili("نیمسال اول 98 - 99"));
          nimsaltahsili.add(new Nimsaltahsili("نیمسال دوم 98 - 99"));
 
-         sAdapter = new SpinnerAdapter(Vaziate_mali.this,nimsaltahsili);
+         sAdapter = new SpinnerAdapter_Nimsal(Vaziate_mali.this,nimsaltahsili);
          spinner.setAdapter(sAdapter);
 
          spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
