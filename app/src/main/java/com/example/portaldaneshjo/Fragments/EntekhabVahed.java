@@ -8,10 +8,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Spinner;
 
 import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.ZamanBandi;
 import com.example.portaldaneshjo.Activity.Omor_mali_activities.Pardakht_electronic;
@@ -30,7 +27,7 @@ public class EntekhabVahed extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        final View view = inflater.inflate(R.layout.entekhab_vahed,container,false);
+        final View view = inflater.inflate(R.layout.fragment_entekhab_vahed,container,false);
 
         btn_enter_entekhabvahed = (Button) view.findViewById(R.id.btn_enter_to_entekhabvahed_id);
         btn_pardakht = (Button) view.findViewById(R.id.btn_pardakht_link_id);

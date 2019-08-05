@@ -1,7 +1,5 @@
 package com.example.portaldaneshjo.Fragments;
 
-import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -11,18 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.widget.GridView;
-import android.widget.ImageButton;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.portaldaneshjo.Activity.Omor_mali_activities.Formol_shahrie;
-import com.example.portaldaneshjo.Activity.Omor_mali_activities.Pardakht_electronic;
-import com.example.portaldaneshjo.Activity.Omor_mali_activities.Pardakht_namovafagh;
-import com.example.portaldaneshjo.Activity.Omor_mali_activities.Vaziate_mali;
 import com.example.portaldaneshjo.Adapter.FragmentsGridViewAdapters.GridViewAdapter_Mali;
 import com.example.portaldaneshjo.R;
 import com.labo.kaji.fragmentanimations.CubeAnimation;
-import com.labo.kaji.fragmentanimations.FlipAnimation;
 
 public class OmorMalli extends Fragment {
 
@@ -39,7 +29,7 @@ public class OmorMalli extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.omor_malli,container,false);
+        View view = inflater.inflate(R.layout.fragment_omor_malli,container,false);
         gridView = (GridView) view.findViewById(R.id.grid_mali_id);
 
         gridView.setAdapter(new GridViewAdapter_Mali(getActivity(),nameitems,picitems));

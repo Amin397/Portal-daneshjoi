@@ -13,8 +13,6 @@ import android.widget.GridView;
 import com.example.portaldaneshjo.Adapter.FragmentsGridViewAdapters.GridViewAdapter_Darkhast;
 import com.example.portaldaneshjo.R;
 import com.labo.kaji.fragmentanimations.CubeAnimation;
-import com.labo.kaji.fragmentanimations.FlipAnimation;
-import com.labo.kaji.fragmentanimations.MoveAnimation;
 
 public class DarkhasteDaneshjoii extends Fragment {
 
@@ -31,7 +29,7 @@ public class DarkhasteDaneshjoii extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.darkhaste_daneshjoii,container,false);
+        View view = inflater.inflate(R.layout.fragment_darkhaste_daneshjoii,container,false);
         gridView = (GridView) view.findViewById(R.id.grid_darkhast_id);
 
         gridView.setAdapter(new GridViewAdapter_Darkhast(getActivity(),nameitems,picitems));

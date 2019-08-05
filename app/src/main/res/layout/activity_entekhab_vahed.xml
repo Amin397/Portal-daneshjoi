@@ -18,7 +18,9 @@
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_15dp"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:layout_marginBottom="@dimen/margin_5dp"
             android:layout_below="@id/toolbar_barnamehaftegi_id"
             android:id="@+id/spn_ravesh_entekhabvahed_id"
             style="@style/DropSpinner"
@@ -31,6 +33,13 @@
         app:cardElevation="@dimen/cardelevation_3dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/frmcontainer_id"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
 
     </android.support.v7.widget.CardView>
 
