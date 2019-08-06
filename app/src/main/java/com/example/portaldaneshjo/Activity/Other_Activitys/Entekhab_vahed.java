@@ -28,7 +28,18 @@ public class Entekhab_vahed extends AppCompatActivity {
         frameLayout = (FrameLayout) findViewById(R.id.frmcontainer_id);
 
         setSpinner();
+        setClickListenerOfSpinner();
+    }
 
+    public void setSpinner(){
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getApplicationContext(),R.array.ravesh_array,
+                android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+
+    }
+
+    public void setClickListenerOfSpinner(){
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -59,14 +70,5 @@ public class Entekhab_vahed extends AppCompatActivity {
 
             }
         });
-
-    }
-
-    public void setSpinner(){
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getApplicationContext(),R.array.ravesh_array,
-                android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
-
     }
 }

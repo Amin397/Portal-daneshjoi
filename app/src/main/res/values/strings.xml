@@ -127,4 +127,7 @@
     <string name="pardakhtshahrie">پرداخت شهریه</string>
     <string name="faalast">سامانه انتخاب واحد هم اکنون برای شما فعال میباشد !</string>
     <string name="enterentekhab">ورود به انتخاب واحد</string>
+    <string name="view_moshakhase">مشخصۀ درس مورد نظر را وارد کنید !</string>
+    <string name="hint_moshakhase">مشخصۀ درس</string>
+    <string name="ss">ثبت درس</string>
 </resources>
