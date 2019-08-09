@@ -46,13 +46,13 @@ public class Entekhab_vahed extends AppCompatActivity {
                 switch (position){
                     case 0:{
                         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                        transaction.replace(R.id.frmcontainer_id,new Sabt_moshakhase());
+                        transaction.replace(R.id.frmcontainer_id,new Sabt_list());
                         transaction.commit();
                         break;
                     }
                     case 1:{
                         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                        transaction.replace(R.id.frmcontainer_id,new Sabt_list());
+                        transaction.replace(R.id.frmcontainer_id,new Sabt_moshakhase());
                         transaction.commit();
                         break;
                     }

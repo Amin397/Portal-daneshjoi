@@ -16,6 +16,12 @@
         android:src="@drawable/iau_logo"
         android:contentDescription="@string/tnb_logo"/>
 
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_logo_tnb_id"
+        android:layout_centerInParent="true" />
+
     <TextView
         android:id="@+id/txt_welcome_id"
         android:layout_width="match_parent"

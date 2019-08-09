@@ -70,10 +70,7 @@ public class GridViewAdapter_Amozeshi extends BaseAdapter {
                         v.getContext().startActivity(new Intent(context, BarnameHaftegi.class));
                         a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
                     }
-                    case "برنامه کلاسی":{
-                        v.getContext().startActivity(new Intent(context, BarnameKelasi.class));
-                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
-                    }
+
                     case "اعتراض نمرات":{
                         v.getContext().startActivity(new Intent(context, EterazNomre.class));
                         a.overridePendingTransition(R.anim.enter,R.anim.exit);break;

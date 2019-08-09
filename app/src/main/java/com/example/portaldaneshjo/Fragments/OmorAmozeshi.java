@@ -16,9 +16,9 @@ import com.labo.kaji.fragmentanimations.CubeAnimation;
 public class OmorAmozeshi extends Fragment {
 
     private GridView gridView;
-    private String[] nameitems = {"برنامه هفتگی","برنامه کلاسی","اعتراض نمرات","کارنامه","لیست دروس",
+    private String[] nameitems = {"برنامه هفتگی","اعتراض نمرات","کارنامه","لیست دروس",
             "زمان بندی ثبت نام","کارت امتحان"};
-    private Integer[] picitems = {R.drawable.ic_barname_kelasi_24dp,R.drawable.ic_barname_haftegi_24dp,R.drawable.ic_eteraz_24dp
+    private Integer[] picitems = {R.drawable.ic_barname_haftegi_24dp,R.drawable.ic_eteraz_24dp
             ,R.drawable.ic_karnameh,R.drawable.ic_list_doros_24dp,R.drawable.ic_zaman_bandi_24dp
             ,R.drawable.ic_examcard};
 
