@@ -130,4 +130,6 @@
     <string name="view_moshakhase">مشخصۀ درس مورد نظر را وارد کنید !</string>
     <string name="hint_moshakhase">مشخصۀ درس</string>
     <string name="ss">ثبت درس</string>
+    <string name="vahed0">واحد</string>
+    <string name="datsname">نام درس</string>
 </resources>
