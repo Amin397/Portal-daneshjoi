@@ -24,7 +24,6 @@
         android:id="@+id/spn_nimsaltahsili_barnamehaftegi_id"
         style="@style/DropSpinner"
         android:textAlignment="center"/>
-
     <ScrollView
         android:layout_margin="10dp"
         android:layout_width="match_parent"
@@ -117,18 +116,6 @@
                 android:layout_marginLeft="14dp"
 
                 />
-
-
-
-
         </TableRow>
-
-
-
-
-
-
     </ScrollView>
-
-
 </RelativeLayout>

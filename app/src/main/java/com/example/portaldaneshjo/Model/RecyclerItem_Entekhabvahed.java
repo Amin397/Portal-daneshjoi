@@ -5,9 +5,7 @@ public class RecyclerItem_Entekhabvahed {
     String name ;
     int vahed ;
 
-
     public RecyclerItem_Entekhabvahed(String name, int vahed  ) {
-        this.name = name;
         this.vahed = vahed;
     }
 
