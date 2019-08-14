@@ -38,15 +38,32 @@ public class Sabt_list extends Fragment {
         adapter = new RecyclerAdapter_Entekhabvahed(getContext(),items);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(adapter);
-        items.add(new RecyclerItem_Entekhabvahed("",3));
-        items.add(new RecyclerItem_Entekhabvahed("ali",3));
-        items.add(new RecyclerItem_Entekhabvahed("ali",3));
-        items.add(new RecyclerItem_Entekhabvahed("ali",3));
-        items.add(new RecyclerItem_Entekhabvahed("ali",3));
-        items.add(new RecyclerItem_Entekhabvahed("ali",3));
+        showdata();
         return view;
     }
 
     public void showdata(){
+
+        items.add(new RecyclerItem_Entekhabvahed("ریاضی مهندسی",3));
+        items.add(new RecyclerItem_Entekhabvahed("انقلاب اسلامی",2));
+        items.add(new RecyclerItem_Entekhabvahed("معماری کامپیوتر",3));
+        items.add(new RecyclerItem_Entekhabvahed("فیزیک 1",3));
+        items.add(new RecyclerItem_Entekhabvahed("مدار الکتریکی",3));
+        items.add(new RecyclerItem_Entekhabvahed("ریاضیات گسسته",3));
+        items.add(new RecyclerItem_Entekhabvahed("ریاضی 1",3));
+        items.add(new RecyclerItem_Entekhabvahed("ریاضی 2",3));
+        items.add(new RecyclerItem_Entekhabvahed("آمار و احتمال مهندسی",3));
+        items.add(new RecyclerItem_Entekhabvahed("زبان تخصصی",2));
+        items.add(new RecyclerItem_Entekhabvahed("وضیت حضرت امام",1));
+        items.add(new RecyclerItem_Entekhabvahed("اندیشه 1",1));
+        items.add(new RecyclerItem_Entekhabvahed("آزمایشگاه مدار الکتریکی",2));
+        items.add(new RecyclerItem_Entekhabvahed("آزمایشگاه فیزیک",2));
+        items.add(new RecyclerItem_Entekhabvahed("معادلات دیفرانسیل",3));
+        items.add(new RecyclerItem_Entekhabvahed("پایگاه داده",3));
+        items.add(new RecyclerItem_Entekhabvahed("گرافیک کامپیوتری",3));
+        items.add(new RecyclerItem_Entekhabvahed("هوش مصنوعی",3));
+        items.add(new RecyclerItem_Entekhabvahed("ساختمان داده",3));
+        items.add(new RecyclerItem_Entekhabvahed("ادبیات فارسی",3));
+        items.add(new RecyclerItem_Entekhabvahed("برنامه نویسی پیشرفته",3));
     }
 }

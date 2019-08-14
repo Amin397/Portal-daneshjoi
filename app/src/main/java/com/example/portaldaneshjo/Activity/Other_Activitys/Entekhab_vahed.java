@@ -1,6 +1,9 @@
 package com.example.portaldaneshjo.Activity.Other_Activitys;
 
+import android.graphics.Color;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,62 +16,44 @@ import com.example.portaldaneshjo.Fragments.Entekhabvahed.Sabt_list;
 import com.example.portaldaneshjo.Fragments.Entekhabvahed.Sabt_moshakhase;
 import com.example.portaldaneshjo.Fragments.Entekhabvahed.Moshahede_entekhabvahed;
 import com.example.portaldaneshjo.R;
+import com.example.portaldaneshjo.Util;
 
 public class Entekhab_vahed extends AppCompatActivity {
 
-    private Spinner spinner;
-    private FrameLayout frameLayout;
+    private ViewPager viewPager;
+    private TabLayout tabLayout;
+
+    Sabt_moshakhase sabt_moshakhase = new Sabt_moshakhase();
+    Sabt_list sabt_list = new Sabt_list();
+    Moshahede_entekhabvahed moshahede_entekhabvahed = new Moshahede_entekhabvahed();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_entekhab_vahed);
 
-        spinner = (Spinner) findViewById(R.id.spn_ravesh_entekhabvahed_id);
-        frameLayout = (FrameLayout) findViewById(R.id.frmcontainer_id);
+        viewPager = (ViewPager) findViewById(R.id.viewpager_entekhabvahed_id);
+        tabLayout = (TabLayout) findViewById(R.id.tabs_entekhabvahed_id);
 
-        setSpinner();
-        setClickListenerOfSpinner();
+        setUpViewPager(viewPager);
+        tabLayout.setupWithViewPager(viewPager);
+
+        setTabsIcon();
     }
 
-    public void setSpinner(){
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getApplicationContext(),R.array.ravesh_array,
-                android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
+    private void setTabsIcon() {
 
+        int[] icons = {R.drawable.ic_moshakhase_entekhabvahed_24dp,R.drawable.ic_list_entekhabvahed_24dp,R.drawable.ic_moshahede_entekhabvahed_24dp};
+        int selectedColor = Color.parseColor("#C70000");
+        int unSelectedColor = Color.parseColor("#ffffff");
+        Util.setupTabIcons(getApplicationContext(),tabLayout,icons,0,selectedColor,unSelectedColor);
     }
 
-    public void setClickListenerOfSpinner(){
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                switch (position){
-                    case 0:{
-                        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                        transaction.replace(R.id.frmcontainer_id,new Sabt_list());
-                        transaction.commit();
-                        break;
-                    }
-                    case 1:{
-                        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                        transaction.replace(R.id.frmcontainer_id,new Sabt_moshakhase());
-                        transaction.commit();
-                        break;
-                    }
-                    case 2:{
-                        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                        transaction.replace(R.id.frmcontainer_id,new Moshahede_entekhabvahed());
-                        transaction.commit();
-                        break;
-                    }
-                }
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
+    private void setUpViewPager(ViewPager viewPager) {
+        Util.ViewPagerAdapter adapter = new Util.ViewPagerAdapter(getSupportFragmentManager());
+        adapter.addFragment(sabt_moshakhase,"ثبت با مشخۀ");
+        adapter.addFragment(sabt_list,"ثبت از لیست");
+        adapter.addFragment(moshahede_entekhabvahed,"مشاهده انتخاب واحد");
+        viewPager.setAdapter(adapter);
     }
 }
