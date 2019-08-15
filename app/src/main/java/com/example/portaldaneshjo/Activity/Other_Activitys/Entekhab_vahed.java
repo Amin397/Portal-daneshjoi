@@ -2,16 +2,9 @@ package com.example.portaldaneshjo.Activity.Other_Activitys;
 
 import android.graphics.Color;
 import android.support.design.widget.TabLayout;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.FrameLayout;
-import android.widget.Spinner;
-
 import com.example.portaldaneshjo.Fragments.Entekhabvahed.Sabt_list;
 import com.example.portaldaneshjo.Fragments.Entekhabvahed.Sabt_moshakhase;
 import com.example.portaldaneshjo.Fragments.Entekhabvahed.Moshahede_entekhabvahed;

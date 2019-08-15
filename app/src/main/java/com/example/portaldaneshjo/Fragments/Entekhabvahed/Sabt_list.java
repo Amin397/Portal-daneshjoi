@@ -35,6 +35,7 @@ public class Sabt_list extends Fragment {
         View view = inflater.inflate(R.layout.fragment_sabt_list,container,false);
 
         recyclerView = (RecyclerView) view.findViewById(R.id.recycler_entekhabvahed_id);
+
         adapter = new RecyclerAdapter_Entekhabvahed(getContext(),items);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(adapter);

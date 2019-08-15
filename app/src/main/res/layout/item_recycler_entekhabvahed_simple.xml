@@ -4,11 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="@dimen/padding_5dp"
-    android:elevation="123dp"
     android:layout_marginTop="12dp"
     app:cardBackgroundColor="#4a7855"
     app:cardCornerRadius="6dp"
-    app:cardElevation="6dp">
+    app:cardElevation="@dimen/cardelevation_3dp">
 
     <LinearLayout
         android:background="#87edb7"
@@ -21,11 +20,11 @@
         <TextView
             android:layout_weight="0.25"
             android:layout_width="0dp"
+            android:textStyle="bold"
             android:textAlignment="center"
             android:textColor="@color/tnb_name_color"
             android:padding="@dimen/padding_5dp"
             android:id="@+id/vahed_id"
-            android:textStyle="bold"
             android:layout_height="match_parent" />
 
         <TextView
