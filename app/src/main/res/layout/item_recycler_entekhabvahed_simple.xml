@@ -25,13 +25,15 @@
             android:textColor="@color/tnb_name_color"
             android:padding="@dimen/padding_5dp"
             android:id="@+id/vahed_id"
+            android:textStyle="bold"
             android:layout_height="match_parent" />
 
         <TextView
             android:layout_weight="0.75"
+            android:textStyle="bold"
             android:layout_width="0dp"
             android:textAlignment="center"
-            android:textColor="@color/tnb_name_color"
+            android:textColor="@color/white_color"
             android:padding="@dimen/padding_5dp"
             android:id="@+id/name_id"
             android:layout_height="match_parent" />
