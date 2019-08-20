@@ -9,11 +9,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.example.portaldaneshjo.Adapter.RecyclerView.RecyclerAdapter_Entekhabvahed;
 import com.example.portaldaneshjo.Model.RecyclerItem_Entekhabvahed;
 import com.example.portaldaneshjo.R;
-
 import java.util.ArrayList;
 
 public class Sabt_list extends Fragment {

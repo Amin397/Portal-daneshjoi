@@ -9,7 +9,6 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
-
 import com.example.portaldaneshjo.Adapter.ListView.ListViewAdapter_VaziateMali;
 import com.example.portaldaneshjo.Adapter.SpinnerAdapter_Nimsal;
 import com.example.portaldaneshjo.Model.ListItem_VaziateMali;

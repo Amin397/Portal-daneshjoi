@@ -10,7 +10,6 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.BarnameHaftegi;
-import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.BarnameKelasi;
 import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.EterazNomre;
 import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.Karname;
 import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.KartEmtehan;

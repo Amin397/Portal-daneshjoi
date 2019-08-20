@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.widget.ListView;
-
 import com.example.portaldaneshjo.Adapter.ListView.ListViewAdapter_pardakhtnamovafagh;
 import com.example.portaldaneshjo.Model.ListItem_PardakhtNamovafagh;
 import com.example.portaldaneshjo.R;

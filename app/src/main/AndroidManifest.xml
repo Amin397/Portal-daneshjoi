@@ -63,9 +63,6 @@
             android:name=".Activity.Omor_amozeshi_activities.EterazNomre"
             android:parentActivityName=".Activity.Other_Activitys.MainActivity" />
         <activity
-            android:name=".Activity.Omor_amozeshi_activities.BarnameKelasi"
-            android:parentActivityName=".Activity.Other_Activitys.MainActivity" />
-        <activity
             android:name=".Activity.Omor_amozeshi_activities.BarnameHaftegi"
             android:parentActivityName=".Activity.Other_Activitys.MainActivity" />
         <activity
