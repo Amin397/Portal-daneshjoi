@@ -12,7 +12,7 @@ import android.widget.Button;
 
 import com.example.portaldaneshjo.Activity.Omor_amozeshi_activities.ZamanBandi;
 import com.example.portaldaneshjo.Activity.Omor_mali_activities.Pardakht_electronic;
-import com.example.portaldaneshjo.Activity.Other_Activitys.Entekhab_vahed;
+import com.example.portaldaneshjo.Activity.Entekhab_Vahed.Entekhab_vahed;
 import com.example.portaldaneshjo.R;
 
 public class EntekhabVahed extends Fragment {

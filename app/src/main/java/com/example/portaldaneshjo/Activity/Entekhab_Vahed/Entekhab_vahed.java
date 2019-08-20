@@ -1,4 +1,4 @@
-package com.example.portaldaneshjo.Activity.Other_Activitys;
+package com.example.portaldaneshjo.Activity.Entekhab_Vahed;
 
 import android.graphics.Color;
 import android.support.design.widget.TabLayout;
@@ -39,7 +39,7 @@ public class Entekhab_vahed extends AppCompatActivity {
         int[] icons = {R.drawable.ic_moshakhase_entekhabvahed_24dp,R.drawable.ic_list_entekhabvahed_24dp,R.drawable.ic_moshahede_entekhabvahed_24dp};
         int selectedColor = Color.parseColor("#C70000");
         int unSelectedColor = Color.parseColor("#ffffff");
-        Util.setupTabIcons(getApplicationContext(),tabLayout,icons,0,selectedColor,unSelectedColor);
+        Util.setupTabIcons(getApplicationContext(),tabLayout,icons,1,selectedColor,unSelectedColor);
     }
 
     private void setUpViewPager(ViewPager viewPager) {

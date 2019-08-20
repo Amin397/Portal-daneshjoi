@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="@dimen/padding_5dp"
+    android:id="@+id/cardview_entekhabvahed_id"
     android:layout_marginTop="12dp"
     app:cardBackgroundColor="#4a7855"
     app:cardCornerRadius="6dp"
@@ -32,7 +33,6 @@
             android:textStyle="bold"
             android:layout_width="0dp"
             android:textAlignment="center"
-            android:textColor="@color/white_color"
             android:padding="@dimen/padding_5dp"
             android:id="@+id/name_id"
             android:layout_height="match_parent" />

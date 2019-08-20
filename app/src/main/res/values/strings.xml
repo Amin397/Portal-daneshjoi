@@ -132,4 +132,9 @@
     <string name="ss">ثبت درس</string>
     <string name="vahed0">واحد</string>
     <string name="datsname">نام درس</string>
+    <string name="techer">استاد</string>
+    <string name="examdate">تاریخ امتحان</string>
+    <string name="classtime">ساعت کلاس</string>
+    <string name="zarfiat">ظرفیت</string>
+    <string name="moshakhase">مشخصۀ</string>
 </resources>
