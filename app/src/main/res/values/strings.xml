@@ -137,4 +137,6 @@
     <string name="classtime">ساعت کلاس</string>
     <string name="zarfiat">ظرفیت</string>
     <string name="moshakhase">مشخصۀ</string>
+    <string name="vahed_nazari">و.نظری</string>
+    <string name="vahed_amali">و.عملی</string>
 </resources>

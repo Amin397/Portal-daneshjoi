@@ -1,31 +1,9 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-=======
-<<<<<<< HEAD
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-<<<<<<< HEAD
-=======
->>>>>>> ab1cc0d32a86f7949e4131de3a3a66feeac1a70c
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
   </component>
-<<<<<<< HEAD
-=======
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
->>>>>>> 16231fa989bf1b6429e9a2ca36d52c2f0ad1a764
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/build/classes" />
-  </component>
-  <component name="ProjectType">
-    <option name="id" value="Android" />
-  </component>
->>>>>>> 4710e9f76b9fd46fd409c09fdd273dfd9920e9ce
->>>>>>> ab1cc0d32a86f7949e4131de3a3a66feeac1a70c
 </project>

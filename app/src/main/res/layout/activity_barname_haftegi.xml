@@ -17,105 +17,106 @@
         android:layout_height="?attr/actionBarSize"/>
 
     <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_10dp"
+        android:textAlignment="center"
         android:layout_below="@id/toolbar_barnamehaftegi_id"
         android:id="@+id/spn_nimsaltahsili_barnamehaftegi_id"
-        style="@style/DropSpinner"
-        android:textAlignment="center"/>
-    <ScrollView
-        android:layout_margin="10dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/spn_nimsaltahsili_barnamehaftegi_id"
-        android:layout_marginTop="21dp">
+        android:layout_height="wrap_content"
+        style="@style/DropSpinner"/>
 
-        <TableRow
-            android:id="@+id/table_row_barname_haftegi"
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scrollbars="horizontal"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="نام درس"
-                android:layout_marginRight="12dp"
-                android:textAlignment="center"
-                android:textColor="@color/black_color"
-                android:textStyle="bold" />
+            android:layout_margin="@dimen/margin_5dp"
+            android:layout_below="@id/spn_nimsaltahsili_barnamehaftegi_id"
+            app:cardElevation="@dimen/cardelevation_3dp"
+            app:cardCornerRadius="@dimen/cardelevation_3dp"
+            android:layout_height="wrap_content">
 
-            <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="نام استاد"
-                android:layout_marginRight="12dp"
-                android:textAlignment="center"
-            android:textColor="@color/black_color"
-            android:textStyle="bold" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingRight="8dp"
-                android:text="عملی\nتعداد واحد"
-                android:textAlignment="center"
-                android:textColor="@color/black_color"
-                android:layout_marginRight="12dp"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:id="@+id/table_layout_id"
+                    android:weightSum="1"
+                    android:layout_height="wrap_content">
 
-                android:textStyle="bold" />
+                    <TextView
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/black_color"
+                        android:text="@string/techer"
+                        android:layout_weight="0.166"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:text="نظری\nتعداد واحد"
-                android:textAlignment="center"
-                android:textColor="@color/black_color"
-                android:layout_marginRight="12dp"
+                    <TextView
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/black_color"
+                        android:text="@string/examdate"
+                        android:layout_weight="0.166"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
 
-                android:textStyle="bold" />
+                    <TextView
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/black_color"
+                        android:text="@string/classtime"
+                        android:layout_weight="0.332"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="جنسیت"
-                android:layout_marginRight="12dp"
+                    <TextView
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/black_color"
+                        android:text="@string/vahed_amali"
+                        android:layout_weight="0.083"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
 
-                android:textAlignment="center"
-                android:textColor="@color/black_color"
-                android:textStyle="bold" />
+                    <TextView
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/black_color"
+                        android:text="@string/vahed_nazari"
+                        android:layout_weight="0.083"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ساعت\nامتحان"
-                android:paddingRight="8dp"
-                android:textAlignment="center"
-                android:textColor="@color/black_color"
-                android:layout_marginRight="12dp"
-                android:textStyle="bold" />
+                    <TextView
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/black_color"
+                        android:text="@string/datsname"
+                        android:layout_weight="0.166"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
 
-            <TextView
-                android:layout_width="65dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="9dp"
-                android:text="شماره و\nساعت کلاس"
-                android:textAlignment="center"
-                android:textColor="@color/black_color"
-                android:textStyle="bold" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:id="@+id/view_uup"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:layout_below="@id/table_layout_id"
+                    android:background="@color/red_color" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:paddingLeft="2dp"
-                android:text="تاریخ\nامتحان"
-                android:textAlignment="center"
-                android:textColor="@color/black_color"
-                android:textStyle="bold"
-                android:layout_marginLeft="14dp"
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/view_uup"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:id="@+id/recycler_barnamehaftegi_id"
+                    android:layout_height="wrap_content">
 
-                />
-        </TableRow>
-    </ScrollView>
+                </android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
 </RelativeLayout>
