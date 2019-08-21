@@ -23,7 +23,7 @@ public class SpinnerAdapter_Nimsal extends ArrayAdapter<Nimsaltahsili> {
     private LayoutInflater layoutInflater;
 
     public SpinnerAdapter_Nimsal(FragmentActivity context, ArrayList<Nimsaltahsili> arrayList){
-        super(context, R.layout.spinner_ravesh_entekhabvahed_opne,arrayList);
+        super(context, R.layout.spinner_nimsaltahsili_open,arrayList);
         layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 

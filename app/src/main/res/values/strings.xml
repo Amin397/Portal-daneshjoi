@@ -131,7 +131,7 @@
     <string name="hint_moshakhase">مشخصۀ درس</string>
     <string name="ss">ثبت درس</string>
     <string name="vahed0">واحد</string>
-    <string name="datsname">نام درس</string>
+    <string name="lessonname">نام درس</string>
     <string name="techer">استاد</string>
     <string name="examdate">تاریخ امتحان</string>
     <string name="classtime">ساعت کلاس</string>
@@ -139,4 +139,5 @@
     <string name="moshakhase">مشخصۀ</string>
     <string name="vahed_nazari">و.نظری</string>
     <string name="vahed_amali">و.عملی</string>
+    <string name="choos">گزینه مورد نظر را انتخاب کنید !</string>
 </resources>

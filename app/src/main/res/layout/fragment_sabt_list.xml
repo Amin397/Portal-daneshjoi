@@ -32,7 +32,7 @@
             android:id="@+id/txt_name_id"
             android:textColor="@color/black_color"
             android:textSize="@dimen/textsize_18sp"
-            android:text="@string/datsname"
+            android:text="@string/lessonname"
             android:layout_width="0dp"
             android:layout_height="match_parent" />
     </LinearLayout>
