@@ -140,4 +140,9 @@
     <string name="vahed_nazari">و.نظری</string>
     <string name="vahed_amali">و.عملی</string>
     <string name="choos">گزینه مورد نظر را انتخاب کنید !</string>
+    <string name="controlmoadel">کنترل معدل</string>
+    <string name="time">ساعت</string>
+    <string name="sallvorod">سال ورود</string>
+    <string name="enddate">تاریخ پایان</string>
+    <string name="startdate">تاریخ شروع</string>
 </resources>

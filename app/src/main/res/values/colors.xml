@@ -12,4 +12,5 @@
     <color name="green_color">#2EAC33</color>
     <color name="version_color">#770000</color>
     <color name="tnb_name_color">#000077</color>
+    <color name="gray_color">#CEBEBCBC</color>
 </resources>
