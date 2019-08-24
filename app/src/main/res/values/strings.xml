@@ -145,4 +145,10 @@
     <string name="sallvorod">سال ورود</string>
     <string name="enddate">تاریخ پایان</string>
     <string name="startdate">تاریخ شروع</string>
+    <string name="score">امتیاز</string>
+    <string name="amali">ع</string>
+    <string name="nazari">ن</string>
+    <string name="vaziat">وضعیت</string>
+    <string name="nomre">نمره</string>
+    <string name="lessoncode">کد درس</string>
 </resources>

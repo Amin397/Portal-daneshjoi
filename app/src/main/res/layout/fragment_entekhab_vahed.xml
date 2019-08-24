@@ -32,7 +32,7 @@
                         android:id="@+id/item0"
                         android:layout_margin="@dimen/margin_10dp"
                         android:layout_alignParentEnd="true"
-                        android:src="@drawable/ic_error_outline_black_24dp"
+                        android:src="@drawable/ic_rederror"
                         android:layout_height="100dp"
                         android:contentDescription="@string/error_vahed"
                         android:layout_alignParentRight="true" />
@@ -111,7 +111,7 @@
                         android:id="@+id/item01"
                         android:layout_margin="@dimen/margin_10dp"
                         android:layout_alignParentEnd="true"
-                        android:src="@drawable/ic_offline_pin_black_24dp"
+                        android:src="@drawable/ic_greentick"
                         android:layout_height="100dp"
                         android:contentDescription="@string/error_vahed"
                         android:layout_alignParentRight="true" />
