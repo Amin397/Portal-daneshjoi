@@ -42,6 +42,7 @@
                         android:id="@+id/txt_bedehkari_entekhabvahed_id"
                         android:layout_height="wrap_content"
                         android:text="@string/bedehkar0"
+                        android:fontFamily="@font/iransans"
                         android:textStyle="bold"
                         android:textSize="@dimen/textsize_18sp"
                         android:textAlignment="gravity"
@@ -53,6 +54,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:text="@string/zaman0"
+                        android:fontFamily="@font/iransans"
                         android:textStyle="bold"
                         android:id="@+id/item1"
                         android:textAlignment="gravity"
@@ -78,6 +80,7 @@
                             android:textStyle="bold"
                             android:id="@+id/btn_zamanbandi_link_id"
                             android:text="@string/zaman_bandi"
+                            android:fontFamily="@font/titr"
                             android:layout_height="match_parent"
                             tools:ignore="ButtonStyle" />
 
@@ -87,6 +90,7 @@
                             android:layout_weight="0.5"
                             android:layout_width="0dp"
                             android:textStyle="bold"
+                            android:fontFamily="@font/titr"
                             android:layout_height="match_parent"
                             tools:ignore="ButtonStyle" />
 
@@ -129,6 +133,7 @@
                         android:layout_toStartOf="@+id/item01"
                         android:layout_toLeftOf="@+id/item01"
                         android:text="@string/faalast"
+                        android:fontFamily="@font/iransans"
                         android:textAlignment="gravity"
                         android:textColor="@color/black_color"
                         android:textSize="@dimen/textsize_18sp"
@@ -136,9 +141,10 @@
 
                     <Button
                         android:text="@string/enterentekhab"
-                        android:textStyle="bold|italic"
+                        android:textStyle="bold"
                         android:background="#e5facc"
                         android:id="@+id/btn_enter_to_entekhabvahed_id"
+                        android:fontFamily="@font/titr"
                         android:layout_width="match_parent"
                         android:layout_below="@id/item01"
                         tools:ignore="ButtonStyle"
