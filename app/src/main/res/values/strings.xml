@@ -151,4 +151,5 @@
     <string name="vaziat">وضعیت</string>
     <string name="nomre">نمره</string>
     <string name="lessoncode">کد درس</string>
+    <string name="passwordchanging">تغییر رمز عبور</string>
 </resources>

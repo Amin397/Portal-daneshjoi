@@ -10,8 +10,20 @@ import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 import com.example.portaldaneshjo.R;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.Hashtable;
 
 public class Changepassword extends AppCompatActivity {
 
@@ -39,20 +51,41 @@ public class Changepassword extends AppCompatActivity {
         btn_changepass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if ((Etxt_acceptnewpass.getText()) == (Etxt_newpass.getText())){
-                    Snackbar snackbar = Snackbar.make(v,"رمز عبور با موفقیت تغییر کرد !",Snackbar.LENGTH_SHORT);
-                    snackbar.show();
+                if (Etxt_newpass.getText().toString().equals(Etxt_acceptnewpass.getText().toString()) && Etxt_nowpass.getText().length()>=0){
+                    PostChangePassword();
+                    Etxt_nowpass.clearComposingText();
+                    Etxt_newpass.clearComposingText();
+                    Etxt_acceptnewpass.clearComposingText();
 
-                    Etxt_newpass.setText(null);
-                    Etxt_acceptnewpass.setText(null);
                 }else {
-                    Snackbar snackbar = Snackbar.make(v,"تایید رمز عبور صحیح نیست !",Snackbar.LENGTH_SHORT);
-                    snackbar.show();
-
-                    Etxt_acceptnewpass.setText(null);
-                    Etxt_newpass.setText(null);
+                    Toast.makeText(Changepassword.this, "0", Toast.LENGTH_SHORT).show();
                 }
             }
         });
+    }
+
+    private void PostChangePassword() {
+        RequestQueue queue = Volley.newRequestQueue(Changepassword.this);
+        String URL = "http://se7enf98.ddns.net/webservice/p/ChangeStudentPassword.php";
+        Hashtable<String , String> params = new Hashtable<>();
+        params.put("StudentCode" , "6002");
+        params.put("OldPassword" , Etxt_nowpass.getText().toString());
+        params.put("NewPassword" , Etxt_newpass.getText().toString());
+
+        JSONObject object = new JSONObject(params);
+
+        JsonObjectRequest request = new JsonObjectRequest(Request.Method.POST, URL, object, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                Toast.makeText(Changepassword.this, response.toString(), Toast.LENGTH_SHORT).show();
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(Changepassword.this, "رمز عبور فعلی را اشتباه وارد کردید", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        queue.add(request);
     }
 }
