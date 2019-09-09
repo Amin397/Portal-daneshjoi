@@ -1,5 +1,7 @@
 package com.example.portaldaneshjo.Activity.Other_Activitys;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -67,8 +69,10 @@ public class Changepassword extends AppCompatActivity {
     private void PostChangePassword() {
         RequestQueue queue = Volley.newRequestQueue(Changepassword.this);
         String URL = "http://se7enf98.ddns.net/webservice/p/ChangeStudentPassword.php";
+        SharedPreferences saver = this.getSharedPreferences("login" , Context.MODE_PRIVATE);
+        String studentnumber = saver.getString("StudentCode" , null);
         Hashtable<String , String> params = new Hashtable<>();
-        params.put("StudentCode" , "6002");
+        params.put("StudentCode" , studentnumber);
         params.put("OldPassword" , Etxt_nowpass.getText().toString());
         params.put("NewPassword" , Etxt_newpass.getText().toString());
 

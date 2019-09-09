@@ -22,7 +22,7 @@
     <TextView
         android:text="@string/user"
         android:fontFamily="@font/titr"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="#880E4F"
         android:textSize="@dimen/textsize_26sp"
         android:layout_marginTop="@dimen/margin_5dp"
         android:id="@+id/user_name_id"
@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/titr"
         android:text="@string/_950431277"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="#000"
         android:textSize="@dimen/textsize_18sp"
          />
 </LinearLayout>

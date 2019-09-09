@@ -7,7 +7,6 @@
     tools:context=".Activity.Other_Activitys.LoginActivity"
     android:background="@color/colorPrimary">
 
-
     <ImageView
         android:src="@drawable/logo_login"
         android:layout_centerHorizontal="true"
@@ -78,19 +77,19 @@
                 android:textColor="#023653"
                 android:textSize="18sp" />
 
-            <AutoCompleteTextView
-                android:id="@+id/email"
+            <EditText
+                android:id="@+id/txt_stdcode_id"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_margin="8dp"
                 android:background="@drawable/background_edit_text"
                 android:hint="@string/prompt_email"
-                android:maxLines="1"
                 android:singleLine="true"
                 android:textAlignment="center"
                 android:inputType="number"
                 android:textColor="@color/colorPrimaryDark"
-                android:textColorHint="@color/white_color" />
+                android:textColorHint="@color/white_color"
+                tools:ignore="TextFields" />
 
             <TextView
                 android:id="@+id/txt_stu_pass_id"
@@ -105,7 +104,7 @@
 
             <EditText
                 android:autofillHints="@string/_950431277"
-                android:id="@+id/password"
+                android:id="@+id/txt_stdpass_id"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_margin="8dp"
@@ -133,6 +132,7 @@
                 android:elevation="@dimen/elevation_8dp"
                 android:fontFamily="@font/kodak"
                 android:textSize="20sp"
+                tools:ignore="ButtonStyle"
                 android:textColor="@color/white_color"
                 android:textStyle="bold" />
 

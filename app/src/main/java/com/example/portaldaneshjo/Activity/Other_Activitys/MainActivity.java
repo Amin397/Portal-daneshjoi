@@ -1,7 +1,9 @@
 package com.example.portaldaneshjo.Activity.Other_Activitys;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -17,6 +19,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.example.portaldaneshjo.Fragments.DarkhasteDaneshjoii;
 import com.example.portaldaneshjo.Fragments.EntekhabVahed;
@@ -24,6 +28,7 @@ import com.example.portaldaneshjo.Fragments.OmorAmozeshi;
 import com.example.portaldaneshjo.Fragments.OmorMalli;
 import com.example.portaldaneshjo.R;
 import com.example.portaldaneshjo.Util;
+import com.squareup.picasso.Picasso;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
     TabLayout tabLayout;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
+    ImageView imgProfile;
+    TextView txtName , txtCode;
 
     OmorMalli malli = new OmorMalli();
     OmorAmozeshi amozeshi = new OmorAmozeshi();
@@ -49,11 +56,33 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout_id);
         navigationView = (NavigationView) findViewById(R.id.navigation_view_id);
 
+        View ss = navigationView.getHeaderView(0);
+        txtName = (TextView) ss.findViewById(R.id.user_name_id);
+        txtCode = (TextView) ss.findViewById(R.id.student_num_id);
+        imgProfile = (ImageView) ss.findViewById(R.id.profile_id);
+
+        SharedPreferences saver = this.getSharedPreferences("login" , Context.MODE_PRIVATE);
+        String name = saver.getString("FullName" , null);
+        txtName.setText(name);
+        Toast.makeText(this, name + " خوش آمدید !", Toast.LENGTH_LONG).show();
+        String code = saver.getString("StudentCode" , null);
+        txtCode.setText(code);
+        String image = saver.getString("ProfilePic" , null);
+        Picasso.get().load(image).into(imgProfile);
+
+
+
         final ActionBar actionBar = getSupportActionBar();
 
-        final ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,0,0);
+        final ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(MainActivity.this,drawerLayout,toolbar,R.string.open_navigation,R.string.close_navigation);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
+
+        /*
+        txtName.setText(saver.getString("FullName" , null));
+        txtCode.setText(saver.getString("StudentCode" , null));
+        String imageurl = saver.getString("ProfilePic" , null);
+        Picasso.get().load(imageurl).into(imgProfile);*/
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
