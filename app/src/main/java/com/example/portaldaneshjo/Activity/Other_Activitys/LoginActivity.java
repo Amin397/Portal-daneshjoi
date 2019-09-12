@@ -42,19 +42,15 @@ public class LoginActivity extends AppCompatActivity {
         txt_stu_pass = (TextView) findViewById(R.id.txt_stu_pass_id);
         txt_portal = (TextView) findViewById(R.id.portal_id);
         btn_login = (Button) findViewById(R.id.btn_sign_in_id);
-
-        Typeface txt_num = Typeface.createFromAsset(getAssets(),"fonts/IRANSans.ttf");
-        txt_stu_num.setTypeface(txt_num);
-
-        Typeface txt_pass = Typeface.createFromAsset(getAssets(),"fonts/IRANSans.ttf");
-        txt_stu_pass.setTypeface(txt_pass);
-
-        Typeface txt_portal_T = Typeface.createFromAsset(getAssets(),"fonts/IRANSans.ttf");
-        txt_portal.setTypeface(txt_portal_T);
-
         btn_login = (Button) findViewById(R.id.btn_sign_in_id);
-        Typeface btn_txt=Typeface.createFromAsset(getAssets(),"fonts/IRANSans.ttf");
-        btn_login.setTypeface(btn_txt);
+
+        Typeface txtFont = Typeface.createFromAsset(getAssets(),"fonts/IRANSans.ttf");
+        txt_stu_num.setTypeface(txtFont);
+        txt_stu_pass.setTypeface(txtFont);
+        txt_portal.setTypeface(txtFont);
+        btn_login.setTypeface(txtFont);
+
+
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -80,6 +76,7 @@ public class LoginActivity extends AppCompatActivity {
                     String fullname = response.getString("FullName");
                     String stdCode = response.getString("StudentCode");
                     String ProfilePic = response.getString("ProfilePic");
+                    String nationalnumber = response.getString("NationalCode");
 
                     String preimg = "http://se7enf98.ddns.net/webservice/p/";
                     String posimg = preimg.concat(ProfilePic);
@@ -88,6 +85,7 @@ public class LoginActivity extends AppCompatActivity {
                     editor.putString("FullName" , fullname);
                     editor.putString("StudentCode" , stdCode);
                     editor.putString("ProfilePic" , posimg);
+                    editor.putString("NationalCode" , nationalnumber);
                     editor.apply();
 
                     if (success.equals("0")){

@@ -65,20 +65,16 @@ public class GridViewAdapter_Mali extends BaseAdapter {
             public void onClick(View v) {
                 switch (nameitems[position]){
                     case "پرداخت الکترونیک":{
-                        v.getContext().startActivity(new Intent(context, Pardakht_electronic.class));
-                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
+                        v.getContext().startActivity(new Intent(context, Pardakht_electronic.class));break;
                     }
                     case "وضعیت مالی":{
-                        v.getContext().startActivity(new Intent(context, Vaziate_mali.class));
-                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
+                        v.getContext().startActivity(new Intent(context, Vaziate_mali.class));break;
                     }
                     case "محاسبه شهریه":{
-                        v.getContext().startActivity(new Intent(context, Formol_shahrie.class));
-                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
+                        v.getContext().startActivity(new Intent(context, Formol_shahrie.class));break;
                     }
                     case "پرداخت های ناموفق":{
-                        v.getContext().startActivity(new Intent(context, Pardakht_namovafagh.class));
-                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
+                        v.getContext().startActivity(new Intent(context, Pardakht_namovafagh.class));break;
                     }
                 }
             }

@@ -66,29 +66,23 @@ public class GridViewAdapter_Amozeshi extends BaseAdapter {
             public void onClick(View v) {
                 switch (nameitems[position]){
                     case "برنامه هفتگی":{
-                        v.getContext().startActivity(new Intent(context, BarnameHaftegi.class));
-                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
+                        v.getContext().startActivity(new Intent(context, BarnameHaftegi.class));break;
                     }
 
                     case "اعتراض نمرات":{
-                        v.getContext().startActivity(new Intent(context, EterazNomre.class));
-                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
+                        v.getContext().startActivity(new Intent(context, EterazNomre.class));break;
                     }
                     case "کارنامه":{
-                        v.getContext().startActivity(new Intent(context, Karname.class));
-                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
+                        v.getContext().startActivity(new Intent(context, Karname.class));break;
                     }
                     case "لیست دروس":{
-                        v.getContext().startActivity(new Intent(context, ListDoros.class));
-                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
+                        v.getContext().startActivity(new Intent(context, ListDoros.class));break;
                     }
                     case "زمان بندی ثبت نام":{
-                        v.getContext().startActivity(new Intent(context, ZamanBandi.class));
-                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
+                        v.getContext().startActivity(new Intent(context, ZamanBandi.class));break;
                     }
                     case "کارت امتحان":{
-                        v.getContext().startActivity(new Intent(context, KartEmtehan.class));
-                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
+                        v.getContext().startActivity(new Intent(context, KartEmtehan.class));break;
                     }
                 }
             }

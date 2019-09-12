@@ -36,7 +36,6 @@ public class EntekhabVahed extends Fragment {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(), Pardakht_electronic.class));
-                getActivity().overridePendingTransition(R.anim.enter,R.anim.exit);
             }
         });
 
@@ -44,7 +43,6 @@ public class EntekhabVahed extends Fragment {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(), ZamanBandi.class));
-                getActivity().overridePendingTransition(R.anim.enter,R.anim.exit);
             }
         });
 
@@ -52,7 +50,6 @@ public class EntekhabVahed extends Fragment {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(), Entekhab_vahed.class));
-                getActivity().overridePendingTransition(R.anim.enter,R.anim.exit);
             }
         });
 

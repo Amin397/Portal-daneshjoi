@@ -68,29 +68,22 @@ public class GridViewAdapter_Darkhast extends BaseAdapter {
             public void onClick(View v) {
                 switch (nameitems[position]){
                     case "درخواست خوابگاه":{
-                        v.getContext().startActivity(new Intent(context, Khabgah.class));
-                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
+                        v.getContext().startActivity(new Intent(context, Khabgah.class));break;
                     }
                     case "پارکینگ":{
-                        v.getContext().startActivity(new Intent(context, Parking.class));
-                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
+                        v.getContext().startActivity(new Intent(context, Parking.class));break;
                     }
                     case "رزرو غذا":{
-                        v.getContext().startActivity(new Intent(context, Ghaza.class));
-                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
+                        v.getContext().startActivity(new Intent(context, Ghaza.class));break;
                     }
                     case "درخواست وام":{
-                        v.getContext().startActivity(new Intent(context, Vam.class));
-                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
+                        v.getContext().startActivity(new Intent(context, Vam.class));break;
                     }
                     case "گواهی اشتغال":{
-                        v.getContext().startActivity(new Intent(context, Eshteghal.class));
-                        a.overridePendingTransition(R.anim.enter,R.anim.exit);break;
+                        v.getContext().startActivity(new Intent(context, Eshteghal.class));break;
                     }
                     case "مرخصی تحصیلی":{
-                        v.getContext().startActivity(new Intent(context, Morakhasi.class));
-                        a.overridePendingTransition(R.anim.enter,R.anim.exit);
-                        break;
+                        v.getContext().startActivity(new Intent(context, Morakhasi.class));break;
                     }
                 }
             }

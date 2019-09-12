@@ -40,10 +40,19 @@ public class MainActivity extends AppCompatActivity {
     ImageView imgProfile;
     TextView txtName , txtCode;
 
+    public static String name;
+    public static String code;
+
     OmorMalli malli = new OmorMalli();
     OmorAmozeshi amozeshi = new OmorAmozeshi();
     DarkhasteDaneshjoii darkhast = new DarkhasteDaneshjoii();
     EntekhabVahed vahed = new EntekhabVahed();
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Toast.makeText(this, name + " خوش آمدید !", Toast.LENGTH_LONG).show();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,14 +71,12 @@ public class MainActivity extends AppCompatActivity {
         imgProfile = (ImageView) ss.findViewById(R.id.profile_id);
 
         SharedPreferences saver = this.getSharedPreferences("login" , Context.MODE_PRIVATE);
-        String name = saver.getString("FullName" , null);
+        name = saver.getString("FullName" , null);
         txtName.setText(name);
-        Toast.makeText(this, name + " خوش آمدید !", Toast.LENGTH_LONG).show();
-        String code = saver.getString("StudentCode" , null);
+        code = saver.getString("StudentCode" , null);
         txtCode.setText(code);
         String image = saver.getString("ProfilePic" , null);
         Picasso.get().load(image).into(imgProfile);
-
 
 
         final ActionBar actionBar = getSupportActionBar();
@@ -77,12 +84,6 @@ public class MainActivity extends AppCompatActivity {
         final ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(MainActivity.this,drawerLayout,toolbar,R.string.open_navigation,R.string.close_navigation);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-
-        /*
-        txtName.setText(saver.getString("FullName" , null));
-        txtCode.setText(saver.getString("StudentCode" , null));
-        String imageurl = saver.getString("ProfilePic" , null);
-        Picasso.get().load(imageurl).into(imgProfile);*/
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -103,7 +104,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                     case R.id.kholase_vaze_tahsili_id:{
                         startActivity(new Intent(getApplicationContext(),Kholase_tahsili.class));
-                        overridePendingTransition(R.anim.enter,R.anim.exit);
                         drawerLayout.closeDrawers();break;
 
                     }
@@ -113,7 +113,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                     case R.id.phone_id:{
                         startActivity(new Intent(getApplicationContext(),Sabte_mobile.class));
-                        overridePendingTransition(R.anim.enter,R.anim.exit);
                         drawerLayout.closeDrawers();break;
                     }
                     case R.id.exit_id:{
@@ -143,8 +142,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.change_pass_id:{
-                startActivity(new Intent(getApplicationContext(),Changepassword.class));
-                overridePendingTransition(R.anim.enter,R.anim.exit);break;
+                startActivity(new Intent(getApplicationContext(),Changepassword.class));break;
             }
             case R.id.exit_tool_id:{
                 finish();
