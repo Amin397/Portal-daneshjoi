@@ -1,5 +1,6 @@
 package com.example.portaldaneshjo.Activity.Other_Activitys;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.support.design.widget.Snackbar;
@@ -57,6 +58,14 @@ public class Sabte_mobile extends AppCompatActivity {
     private void mobileSubmitPost(String national , final View v) {
         final RequestQueue queue = Volley.newRequestQueue(Sabte_mobile.this);
         String URL = "http://se7enf98.ddns.net/webservice/p/ChangeMobile.php";
+
+        final ProgressDialog dialog ;
+        dialog = new ProgressDialog(Sabte_mobile.this);
+        dialog.setMessage("لطفا صبر کنید ..");
+        dialog.setCancelable(false);
+        dialog.show();
+
+
         Hashtable<String , String> params = new Hashtable<>();
         params.put("NationalCode" , national);
         params.put("PhoneNumber" , jadid_mobile.getText().toString());
@@ -68,6 +77,8 @@ public class Sabte_mobile extends AppCompatActivity {
             public void onResponse(JSONObject response) {
                 try {
                     String result = response.getString("status");
+
+                    dialog.dismiss();
 
                     if (result.equals("successful")){
                         Snackbar snackbar = Snackbar.make(v, jadid_mobile.getText() + " با موفقیت ثبت شد !",Snackbar.LENGTH_SHORT);
@@ -83,6 +94,7 @@ public class Sabte_mobile extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                dialog.dismiss();
                 Toast.makeText(Sabte_mobile.this, error.toString(), Toast.LENGTH_SHORT).show();
             }
         });

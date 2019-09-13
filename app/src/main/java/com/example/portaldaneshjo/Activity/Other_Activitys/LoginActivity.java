@@ -1,5 +1,6 @@
 package com.example.portaldaneshjo.Activity.Other_Activitys;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -66,12 +67,20 @@ public class LoginActivity extends AppCompatActivity {
         params.put("StudentCode" , stdCode.getText().toString());
         params.put("Password" , stdPass.getText().toString());
 
+        final ProgressDialog dialog ;
+        dialog = new ProgressDialog(LoginActivity.this);
+        dialog.setMessage("لطفا صبر کنید ..");
+        dialog.setCancelable(false);
+        dialog.show();
+
+
         JSONObject object = new JSONObject(params);
 
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.POST, URL, object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 try {
+
                     String success = response.getString("error");
                     String fullname = response.getString("FullName");
                     String stdCode = response.getString("StudentCode");
@@ -88,6 +97,7 @@ public class LoginActivity extends AppCompatActivity {
                     editor.putString("NationalCode" , nationalnumber);
                     editor.apply();
 
+                    dialog.dismiss();
                     if (success.equals("0")){
                         startActivity(new Intent(LoginActivity.this , MainActivity.class));
                     }else {
@@ -101,6 +111,7 @@ public class LoginActivity extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                dialog.dismiss();
                 Toast.makeText(LoginActivity.this, error.toString(), Toast.LENGTH_SHORT).show();
             }
         });

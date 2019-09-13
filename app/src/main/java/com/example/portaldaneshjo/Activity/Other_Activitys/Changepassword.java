@@ -1,5 +1,6 @@
 package com.example.portaldaneshjo.Activity.Other_Activitys;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.support.design.widget.Snackbar;
@@ -69,6 +70,14 @@ public class Changepassword extends AppCompatActivity {
     private void PostChangePassword() {
         RequestQueue queue = Volley.newRequestQueue(Changepassword.this);
         String URL = "http://se7enf98.ddns.net/webservice/p/ChangeStudentPassword.php";
+
+        final ProgressDialog dialog ;
+        dialog = new ProgressDialog(Changepassword.this);
+        dialog.setMessage("لطفا صبر کنید ..");
+        dialog.setCancelable(false);
+        dialog.show();
+
+
         SharedPreferences saver = this.getSharedPreferences("login" , Context.MODE_PRIVATE);
         String studentnumber = saver.getString("StudentCode" , null);
         Hashtable<String , String> params = new Hashtable<>();
@@ -81,11 +90,13 @@ public class Changepassword extends AppCompatActivity {
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.POST, URL, object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                dialog.dismiss();
                 Toast.makeText(Changepassword.this, response.toString(), Toast.LENGTH_SHORT).show();
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                dialog.dismiss();
                 Toast.makeText(Changepassword.this, "رمز عبور فعلی را اشتباه وارد کردید", Toast.LENGTH_SHORT).show();
             }
         });
