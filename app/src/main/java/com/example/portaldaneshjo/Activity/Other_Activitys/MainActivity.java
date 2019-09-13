@@ -1,5 +1,6 @@
 package com.example.portaldaneshjo.Activity.Other_Activitys;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -7,6 +8,7 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
@@ -19,9 +21,17 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 import com.example.portaldaneshjo.Fragments.DarkhasteDaneshjoii;
 import com.example.portaldaneshjo.Fragments.EntekhabVahed;
 import com.example.portaldaneshjo.Fragments.OmorAmozeshi;
@@ -29,6 +39,11 @@ import com.example.portaldaneshjo.Fragments.OmorMalli;
 import com.example.portaldaneshjo.R;
 import com.example.portaldaneshjo.Util;
 import com.squareup.picasso.Picasso;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.Hashtable;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -78,6 +93,8 @@ public class MainActivity extends AppCompatActivity {
         String image = saver.getString("ProfilePic" , null);
         Picasso.get().load(image).into(imgProfile);
 
+        final String nationalcode = saver.getString("NationalCode" , null);
+
 
         final ActionBar actionBar = getSupportActionBar();
 
@@ -112,7 +129,20 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     }
                     case R.id.phone_id:{
-                        startActivity(new Intent(getApplicationContext(),Sabte_mobile.class));
+                        //startActivity(new Intent(getApplicationContext(),Sabte_mobile.class));
+                        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                        builder.setTitle("ثبت موبایل");
+                        final View customLayout = getLayoutInflater().inflate(R.layout.alertchangemobile,null);
+                        builder.setView(customLayout);
+                        final EditText newMob = (EditText) customLayout.findViewById(R.id.mobile_jadid_idnew);
+                        builder.setPositiveButton("ثبت ", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                mobileSubmitPost(nationalcode , newMob);
+                            }
+                        });
+                        AlertDialog dialogMobile = builder.create();
+                        dialogMobile.show();
                         drawerLayout.closeDrawers();break;
                     }
                     case R.id.exit_id:{
@@ -130,6 +160,50 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
 
         setTabIcons();
+    }
+
+    private void mobileSubmitPost(String national , final EditText jadid_mobile) {
+        final RequestQueue queue = Volley.newRequestQueue(MainActivity.this);
+        String URL = "http://se7enf98.ddns.net/webservice/p/ChangeMobile.php";
+
+        final ProgressDialog dialog ;
+        dialog = new ProgressDialog(MainActivity.this);
+        dialog.setMessage("لطفا صبر کنید ..");
+        dialog.setCancelable(false);
+        dialog.show();
+
+
+        Hashtable<String , String> params = new Hashtable<>();
+        params.put("NationalCode" , national);
+        params.put("PhoneNumber" , jadid_mobile.getText().toString());
+
+        JSONObject object = new JSONObject(params);
+
+        final JsonObjectRequest request = new JsonObjectRequest(Request.Method.POST, URL, object, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                try {
+                    String result = response.getString("status");
+
+                    dialog.dismiss();
+
+                    if (result.equals("successful")){
+                        Toast.makeText(MainActivity.this, jadid_mobile.getText() + " با موفقیت ثبت شد !", Toast.LENGTH_SHORT).show();
+                    }else {
+                        Toast.makeText(MainActivity.this, "خطا", Toast.LENGTH_SHORT).show();
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                dialog.dismiss();
+                Toast.makeText(MainActivity.this, error.toString(), Toast.LENGTH_SHORT).show();
+            }
+        });
+        queue.add(request);
     }
 
     @Override
