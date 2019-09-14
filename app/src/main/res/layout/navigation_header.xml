@@ -20,7 +20,6 @@
         android:src="@drawable/picture" />
 
     <TextView
-        android:text="@string/user"
         android:fontFamily="@font/titr"
         android:textColor="#880E4F"
         android:textSize="@dimen/textsize_26sp"
@@ -36,7 +35,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/titr"
-        android:text="@string/_950431277"
         android:textColor="#000"
         android:textSize="@dimen/textsize_18sp"
          />

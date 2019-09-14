@@ -23,9 +23,6 @@
             android:name=".Activity.Other_Activitys.Kholase_tahsili"
             android:parentActivityName=".Activity.Other_Activitys.MainActivity" />
         <activity
-            android:name=".Activity.Other_Activitys.Changepassword"
-            android:parentActivityName=".Activity.Other_Activitys.MainActivity" />
-        <activity
             android:name=".Activity.Omor_amozeshi_activities.ShowKartEmtehan"
             android:parentActivityName=".Activity.Other_Activitys.MainActivity" />
         <activity

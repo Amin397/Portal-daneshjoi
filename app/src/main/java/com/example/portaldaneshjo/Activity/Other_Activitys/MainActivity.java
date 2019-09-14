@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                     case R.id.phone_id:{
                         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                        builder.setTitle("ثبت موبایل");
+                        builder.setCustomTitle(getLayoutInflater().inflate(R.layout.title_view_submitmobile , null));
                         final View customLayout_mobile = getLayoutInflater().inflate(R.layout.alert_changemobile_view,null);
                         builder.setView(customLayout_mobile);
                         final EditText newMob = (EditText) customLayout_mobile.findViewById(R.id.mobile_jadid_idnew);
@@ -147,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
                         drawerLayout.closeDrawers();break;
                     }
                     case R.id.exit_id:{
-                        finish();break;
+                        onDestroy();break;
                     }
                 }
                 return true;
@@ -220,8 +220,7 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.change_pass_id:{
                 final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                builder.setTitle("تغییر رمز عبور");
-
+                builder.setCustomTitle(getLayoutInflater().inflate(R.layout.title_view_changepassword , null));
                 final View customView_ChangePass = getLayoutInflater().inflate(R.layout.alert_changepassword_view,null);
                 builder.setView(customView_ChangePass);
                 final EditText nowpass = (EditText) customView_ChangePass.findViewById(R.id.nowpass_idnew);

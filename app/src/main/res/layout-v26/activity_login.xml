@@ -103,7 +103,6 @@
                 android:textSize="18sp" />
 
             <EditText
-                android:autofillHints="@string/_950431277"
                 android:id="@+id/txt_stdpass_id"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
