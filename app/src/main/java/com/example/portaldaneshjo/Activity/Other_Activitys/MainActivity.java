@@ -17,7 +17,6 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -56,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
     //Strings
     public static String name;
     public static String code;
+    public static String nationalcode;
+
+     Boolean showONCE = true;
 
     //Fragments
     OmorMalli malli = new OmorMalli();
@@ -64,37 +66,8 @@ public class MainActivity extends AppCompatActivity {
     EntekhabVahed vahed = new EntekhabVahed();
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        viewPager = (ViewPager) findViewById(R.id.viewPager_id);
-        toolbar = (Toolbar) findViewById(R.id.toolbar_id);
-        tabLayout = (TabLayout) findViewById(R.id.tabs);
-        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout_id);
-        navigationView = (NavigationView) findViewById(R.id.navigation_view_id);
-
-        //Navigation View
-        View ss = navigationView.getHeaderView(0);
-        txtName = (TextView) ss.findViewById(R.id.user_name_id);
-        txtCode = (TextView) ss.findViewById(R.id.student_num_id);
-        imgProfile = (ImageView) ss.findViewById(R.id.profile_id);
-
-        //SharedPreferences
-        SharedPreferences saver = this.getSharedPreferences("login" , Context.MODE_PRIVATE);
-        name = saver.getString("FullName" , null);
-        txtName.setText(name);
-        code = saver.getString("StudentCode" , null);
-        txtCode.setText(code);
-        final String nationalcode = saver.getString("NationalCode" , null);
-        String image = saver.getString("ProfilePic" , null);
-        Picasso.get().load(image).into(imgProfile);
-
-        //Navigation Toggle
-        final ActionBar actionBar = getSupportActionBar();
-        final ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(MainActivity.this,drawerLayout,toolbar,R.string.open_navigation,R.string.close_navigation);
-        drawerLayout.addDrawerListener(toggle);
-        toggle.syncState();
+    protected void onResume() {
+        super.onResume();
 
         //Navigation Listener
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -153,6 +126,48 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+        //Navigation Toggle
+        final ActionBar actionBar = getSupportActionBar();
+        final ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(MainActivity.this,drawerLayout,toolbar,R.string.open_navigation,R.string.close_navigation);
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        if (showONCE){
+            Toast.makeText(this, name + " خوش آمدید !", Toast.LENGTH_SHORT).show();
+            showONCE = false;
+        }else {
+            //
+        }
+
+        viewPager = (ViewPager) findViewById(R.id.viewPager_id);
+        toolbar = (Toolbar) findViewById(R.id.toolbar_id);
+        tabLayout = (TabLayout) findViewById(R.id.tabs);
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout_id);
+        navigationView = (NavigationView) findViewById(R.id.navigation_view_id);
+
+        //Navigation View
+        View ss = navigationView.getHeaderView(0);
+        txtName = (TextView) ss.findViewById(R.id.user_name_id);
+        txtCode = (TextView) ss.findViewById(R.id.student_num_id);
+        imgProfile = (ImageView) ss.findViewById(R.id.profile_id);
+
+        //SharedPreferences
+        SharedPreferences saver = this.getSharedPreferences("login" , Context.MODE_PRIVATE);
+        name = saver.getString("FullName" , null);
+        txtName.setText(name);
+        code = saver.getString("StudentCode" , null);
+        txtCode.setText(code);
+        nationalcode = saver.getString("NationalCode" , null);
+        String image = saver.getString("ProfilePic" , null);
+        Picasso.get().load(image).into(imgProfile);
 
         //Toolbar
         toolbar.setTitle("تهران شمال");
